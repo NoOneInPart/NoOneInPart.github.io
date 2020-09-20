@@ -35,11 +35,17 @@ body {
 	box-sizing: border-box;
 }
 
-@media screen and (max-aspect-ratio: 2/1) {
-  .column {
-    width: 100%;
-    border-bottom: 0px;
-  }
+@media screen and (max-aspect-ratio: 12/10) {
+	.column {
+		width: 100%;
+		border-bottom: 0px;
+  	}
+}
+
+@media screen and (min-resolution: 200dpi) {
+	body {
+  		font-size: 20px;
+  	}
 }
 
 .codeExample {
