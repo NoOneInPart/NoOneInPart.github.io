@@ -1,0 +1,12 @@
+#EXTM3U
+#EXTVLCOPT:network-caching=1000
+http://adultswimhls-i.akamaihd.net/hls/live/238460/adultswim/main/1/master_Layer5.m3u8
+#EXTVLCOPT:network-caching=1000
+https://nhkwtvglobal-i.akamaihd.net/hls/live/263941/nhkwtvglobal/index_1180.m3u8
+#EXTVLCOPT:network-caching=1000
+https://rt-doc-live-hls.secure.footprint.net/rt/doc/index2500.m3u8
+#EXTVLCOPT:network-caching=1000
+http://rt-usa-live.hls.adaptive.level3.net/rt/usa/index2500.m3u8
+#EXTVLCOPT:network-caching=1000
+https://freeeucache.streamlive.to/live/9l41fcr1sgmclej/index.m3u8?st=r1LFDycpHQIZpUnLopaldg&expires=1498267050
+
