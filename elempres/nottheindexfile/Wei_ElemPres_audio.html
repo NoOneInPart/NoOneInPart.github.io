@@ -7,16 +7,16 @@
 			<link rel="stylesheet" type="text/css" href="Wei_ElemPres_style.css">
 		</head>
 		<body>
-			<div class="header" id="header">
-				<a href="../Wei_ElemPres_index.html" class="headerLeft">< Back</a>
-				<div class="code headerTitle" id="headTitle">&lt;audio&gt;</div>
+			<div class="header" id="header"> <!-- Header section -->
+				<a href="../Wei_ElemPres_index.html" class="headerLeft">< Back</a> <!-- Adds Back button to header -->
+				<div class="code headerTitle" id="headTitle">&lt;audio&gt;</div> <!-- header text -->
 			</div>
 			<br>
-			<div id="examples" class="column padSide">
+			<div id="examples" class="column padSide"> <!-- 1st column containing the code example and a working example -->
 				<span class="boldText">Code Example:</span>
-				<div id="audioSample" class="codeExample">
-					&lt;audio&gt;<br>
-					<div class="tab" id="tabCode">
+				<div id="audioSample" class="codeExample"> <!-- Code sample -->
+					&lt;audio controls&gt;<br> <!-- &lt; and &gt; used instead of < and > to make sure brackets appear as text -->
+					<div class="tab" id="tabCode"> <!-- DIV with padding to simulate tabbed text -->
 						&lt;source src="daydreaming.m4a" type="audio/mp4"&gt;<br>
 						&lt;source src="daydreaming.mp3" type="audio/mpeg"&gt;<br>
 						Your browser does not support HTML5 audio.<br>
@@ -26,22 +26,23 @@
 				<br>
 				<span class="boldText">Object Example:</span>
 				<br>
-				<audio controls>
+				<audio controls> <!-- working example of HTML5 Audio -->
 				<source src="../elements/example.m4a" type="audio/mp4">
-					Your browser doesn't support HTML5 audio. Please upgrade your browser to one that's from this decade. I heard Google Chrome is a good one.
+					Your browser doesn't support HTML5 audio. Please upgrade your browser to one that's from this decade. I heard Google Chrome is a good one. <!-- Text that will appear if the browser doesn't support the  audio tag -->
 				</audio>
 				<br>
-				Audio sample commissioned by Paris Lun and used with permission. 
+				Audio sample commissioned by Paris Lun and used with permission. <!-- Credits -->
 			</div>
-			<div id="textinfo" class="column padSide">
-				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" class="inlineButton" target="_blank">Click here to view this element in the Mozilla Developer Network</a>
+			<div id="textinfo" class="column padSide"> <!-- Column Two containing links and text -->
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" class="inlineButton" target="_blank">Click here to view this element in the Mozilla Developer Network</a> <!-- Link with CSS theming -->
 				<a href="https://www.w3schools.com/html/html5_audio.asp" class="inlineButton" target="blank">Click here to view this element in W3Schools</a>
 				<br>
-				<br>
+				<br> <!-- Extra linebreak because it wouldn't make an empty line for some reason idk -->
 				The HTML5 <span class="code">&lt;audio&gt;</span> element is used to provide audio playback in compatible browsers. Supported audio codecs depend on browser support, but AAC, MP3, Ogg, and Opus are common formats.
 				<br>
 				<br>
-				<table>
+				<span class="boldText">Attributes:</span>
+				<table> <!-- Table of Attributes no I cannot be bothered to make a pun go away -->
 					<tr>
 						<th>Attribute</th>
 						<th>Value</th>
@@ -75,7 +76,7 @@
 					<tr>
 						<td>src</td>
 						<td>URL</td>
-						<td>Determines what audio will be played</td>
+						<td>Determines what audio will be played (&lt;source&gt; can be used in place of src; see code sample)</td>
 					</tr>
 				</table>
 			</div>
