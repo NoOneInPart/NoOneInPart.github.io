@@ -35,6 +35,16 @@ body {
 	box-sizing: border-box;
 }
 
+.fullColumn {	
+	background-color: #111111;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
 @media screen and (max-aspect-ratio: 12/10) {
 	.column {
 		width: 100%;
