@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-	background-color: #111111;
+	background-color: #222222;
 }
 
 .headerLeft {
@@ -30,13 +30,13 @@ body {
 .column {
 	width: 50%;
 	float: left;
-	background-color: #111111;
+	background-color: #222222;
 	padding: 10px;
 	box-sizing: border-box;
 }
 
 .fullColumn {	
-	background-color: #111111;
+	background-color: #222222;
 	padding: 10px;
 	box-sizing: border-box;
 }
@@ -76,7 +76,7 @@ body {
 	font-weight: lighter;
 	text-align: center;
 	font-size: 50px;
-	background-color: #111111;
+	background-color: #222222;
 }
 
 .inlineButton {
