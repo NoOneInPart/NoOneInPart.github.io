@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro','Tahoma',sans-serif;
+    background-color: white;
+}
+
+.serif {
+    font-family: 'Source Serif Pro','Times New Roman',serif;
+}
+
+.bolder{
+    font-weight: 700;
+}
+
+#navbar {
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    width: 100%;
+    backdrop-filter: saturate(150%) blur(20px); /* magic blurred background thing */
+    -webkit-backdrop-filter: blur(15px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
+    font-size: 0.75em;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+#contact {
+    float: right;
+    padding: 0 2em;
+}
+
+#contact > a > img {
+    height: 2.5em;
+    max-width: 100%;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.textcontainer{
+    display: block;
+    padding: 0;
+}
+
+.textbox > h2{
+    margin-top: 0.5em;
+}
+
+@keyframes movedown {
+    from {padding-top: 0;}
+    to {padding-top: 1em;}
+}
+
+.textbox{
+    max-width: 25em;
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 2em;
+    padding-top: 1em;
+    opacity: 0;
+    animation: fade 1s ease-out 0.5s, movedown 1s ease-out 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#navbar > a {
+    margin: 0;
+    color: white;
+    font-size: 2em;
+    padding: 0 0.5em;
+}
+
+
+.selected{
+    text-decoration: underline;
+}
+
+#nameboxthing{
+    width: 100%;
+    height: 65vh;
+    min-height: 20em;
+    display: block;
+    background-image: url("../image/banner.jpg");
+    background-color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: fade 1s ease-out;
+    overflow: hidden;
+}
+
+#bannervid{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 1s ease 2s 1;
+    animation-fill-mode: forwards;
+}
+
+#bannervid > img{
+    z-index: 3;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 1em 1em 0.5em 1em;
+}
+
+footer > a{
+    color: white;
+}
