@@ -4,10 +4,6 @@ body {
     background-color: white;
 }
 
-.serif {
-    font-family: 'Source Serif Pro','Times New Roman',serif;
-}
-
 .bolder{
     font-weight: 700;
 }
@@ -16,12 +12,12 @@ body {
     z-index: 1;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 1em;
+    padding: 0.5em 1em;
     width: 100%;
     backdrop-filter: saturate(150%) blur(20px); /* magic blurred background thing */
-    -webkit-backdrop-filter: blur(15px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
+    -webkit-backdrop-filter: saturate(150%) blur(20px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
     font-size: 0.75em;
-    border-bottom: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 #contact {
@@ -37,15 +33,6 @@ body {
 @keyframes fade {
     from {opacity: 0;}
     to {opacity: 1;}
-}
-
-.textcontainer{
-    display: block;
-    padding: 0;
-}
-
-.textbox > h2{
-    margin-top: 0.5em;
 }
 
 @keyframes movedown {
@@ -64,16 +51,64 @@ body {
     animation-fill-mode: forwards;
 }
 
+.adaptive{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 40em) {
+    .adaptive {
+      flex-direction: column;
+    }
+  }
+
+#boardpic{
+    flex: 10%;
+    min-height: 10em;
+    flex-grow: 1;
+    opacity: 0;
+    animation: fade 1s ease-out 0.5s, movedown 1s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    max-width: 40em;
+    max-height: 40em;
+}
+
+#boardpic > img{
+    width: 100%;
+}
+
+.adaptivetext{
+    flex: 5%;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    margin: 0 !important;
+    width: 100%;
+    max-width: none !important;
+}
+
+.adaptivetext > h2{
+    margin-top: 0;  
+}
+
+li{
+    padding-bottom: 0.2em;
+}
+
 #navbar > a {
-    margin: 0;
     color: white;
     font-size: 2em;
-    padding: 0 0.5em;
+    padding: 0 1em 0 0;
+    text-decoration: none;
+}
+
+#navbar > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
 .selected{
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 #nameboxthing{
@@ -81,14 +116,25 @@ body {
     height: 65vh;
     min-height: 20em;
     display: block;
+    position: relative;
+    animation: fade 1s ease-out;
+    overflow: hidden;
+}
+
+.profilebanner{
     background-image: url("../image/banner.jpg");
     background-color: white;
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    animation: fade 1s ease-out;
-    overflow: hidden;
+}
+
+.blogbanner{
+    background-image: url("../image/banner2.jpg");
+    background-color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #bannervid{

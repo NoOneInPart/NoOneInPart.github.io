@@ -6,40 +6,53 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/css.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;700">
-        <!--<link rel="icon" type="image/png" href="image/favicon.png">-->
-        <meta name="viewport" content="width=device-width, initial-scale=0.75">
+        <!--<link rel="icon" type="image/png" href="image/favicon.png">--> <!--Removing the favicon for now until a suitable one can be created-->
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
         <meta name="color-scheme" content="light">
 	</head>
     <body>
         <div id="navbar">
-            <a title="view my profile" class="selected">Profile</a>
-            <a title="look at my blog of whatever i feel like doing idk">Blog</a>
+            <a title="view my profile, which you are currently on" class="selected">Profile</a>
+            <a title="look at my blog of whatever i feel like doing idk" href="html/wei_clientblog.html">Blog</a>
             <div id="contact">
-                <a href="https://www.facebook.com/anas.saeed.39589" title="Find me on Facebook">
+                <a href="https://www.facebook.com/anas.saeed.39589" title="Find me on Facebook" target="_blank">
                     <img src="brand/facebook.svg">
                 </a>
             </div>
         </div>
         <div id="namecontainer">
-            <div id="nameboxthing">
-                <video autoplay loop muted preload="auto" id="bannervid" poster="image/banner.jpg">
+            <div id="nameboxthing" class="profilebanner" title="a picture of anas saeed with sunglasses indoors lying on a bed">
+                <!--I'm disabling the video banner for now until I find a better video to use. Uncomment the below code to see the banner.-->
+                <!--<video autoplay loop muted preload="auto" id="bannervid" poster="image/banner.jpg">
                     <source src="video/banner.webm" type="video/webm">
                     <source src="video/banner.mp4" type="video/mp4">
-                    <img src="image/banner.jpg" alt="a picture of anas saeed with sunglasses indoors lying on a bed">
-                </video>
+                    <img src="image/banner.jpg" alt="a picture of anas saeed with sunglasses indoors lying on a bed meant as a fallback image for when the video doesn't load">
+                </video>-->
             </div>
         </div>
-        <div class="textcontainer">
-            <div class="textbox">
-                <h2>Hi! I'm Anas Saeed.</h2>
-                I am a student currently attending American High School. This is some placeholder text because I have no idea what to put here. The quick brown fox jumped over the big black bear. Lorem ipsum dolor sit amet. Your mom haha lmao
+        <div class="textbox">
+            <h2>Hi! I'm Anas Saeed.</h2>
+            I am a student currently attending American High School. This is some placeholder text because I have no idea what to put here. The quick brown fox jumped over the big black bear. Lorem ipsum dolor sit amet. I went outside one day and found a cool stick. I don't know where it is right now.
+        </div>
+        <div class="adaptive">
+            <div id="boardpic" title="letter board that says #JAVA PYTHON C2P">
+                <img src="image/board.jpg" alt="letter board that says #JAVA PYTHON C2P">
+            </div>
+            <div class="textbox adaptivetext">
+                <h2>Things I'm interested in:</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Machine Learning</li>
+                    <li>Cooking (see blog [whenever I get that working {probably no time soon}])</li>
+                    <li>Anime</li>
+                </ul>
             </div>
         </div>
         <footer>
-            This website uses the Source Sans Pro and Source Serif Pro fonts when available. They were designed by Paul D. Hunt.<br>
-            Website layout and coding by Timothy Wei.<br>
-            Last updated: March 4, 2021<br>
+            This website uses the Source Sans Pro font when available. It was designed by Paul D. Hunt.<br>
+            Website layout and coding by Timothy Wei. (tombunyon@live.com)<br>
+            Last updated: March 8, 2021<br>
             <br>
             <a target="_blank" href="https://blog.medium.com/">Design reference A (overall layout)</a><br>
             <a target="_blank" href="https://www.apple.com/">Design reference B (theming)</a>
@@ -48,13 +61,20 @@
 </html>
 
 <!--
+    Bibliography:
+
     "backdrop-filter." MDN Web Docs, Mozilla, developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter.
+    "Brand Resources." Brand Resource Center, Facebook, en.facebookbrand.com/facebookapp.
     "CSS background-image Property." W3Schools, www.w3schools.com/cssref/pr_background-image.asp.
     "CSS Flexbox." W3Schools, www.w3schools.com/css/css3_flexbox.asp.
+    "CSS Flex Items." W3Schools, www.w3schools.com/css/css3_flexbox_items.asp.
+    "CSS Flex Responsive." W3Schools, www.w3schools.com/css/css3_flexbox_responsive.asp.
     "CSS Layout - Horizontal & Vertical Align." W3Schools, www.w3schools.com/css/css_align.asp.
+    "CSS The object-fit Property." W3Schools, www.w3schools.com/css/css3_object-fit.asp.
     "CSS Units." W3Schools, www.w3schools.com/cssref/css_units.asp.
     "How to Add a Favicon to your Site." W3C, www.w3.org/2005/10/howto-favicon.
+    "How TO - Fullscreen Video." W3Schools, www.w3schools.com/howto/howto_css_fullscreen_video.asp.
     Hunt, Paul D. "Source Sans Pro." Google Fonts, Google, fonts.google.com/specimen/Source+Sans+Pro.
-    Hunt, Paul D. "Source Serif Pro." Google Fonts, Google, fonts.google.com/specimen/Source+Serif+Pro.
+    "Responsive Web Design - The Viewport." W3Schools, www.w3schools.com/css/css_rwd_viewport.asp.
     Steiner, Thomas. "Improved dark mode default styling with the color-scheme CSS property and the corresponding meta tag." web.dev, Google Developers, 16 Jun. 2020, web.dev/color-scheme.
 -->
