@@ -52,7 +52,7 @@ body {
 }
 
 .adaptive{
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -63,7 +63,7 @@ body {
   }
 
 #boardpic{
-    flex: 10%;
+    flex: 5%;
     min-height: 10em;
     flex-grow: 1;
     opacity: 0;
@@ -78,11 +78,10 @@ body {
 }
 
 .adaptivetext{
-    flex: 5%;
+    flex: 2%;
     padding-bottom: 1em;
     padding-right: 1em;
     margin: 0 !important;
-    width: 100%;
     max-width: none !important;
 }
 
