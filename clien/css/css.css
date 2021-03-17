@@ -58,13 +58,18 @@ body {
     flex-wrap: wrap;
 }
 
-@media (max-width: 40em) {
+@media (max-width: 60em) {
+    .textbox{
+        font-size: 1.5em !important;
+    }
+}
+
+@media (max-width: 35em) {
     .adaptive {
       flex-direction: column;
     }
     #nameboxthing{
         height: 40vh !important;
-        min-height: 10em !important;
     }
     .textbox{
         font-size: 1.5em !important;
@@ -79,8 +84,7 @@ body {
     opacity: 0;
     animation: fade 1s ease-out 0.5s, movedown 1s ease-out 0.5s;
     animation-fill-mode: forwards;
-    max-width: 40em;
-    max-height: 40em;
+    position: relative;
 }
 
 #boardpic > img{
@@ -93,6 +97,7 @@ body {
     padding-right: 1em;
     margin: 0 !important;
     max-width: none !important;
+    background-color: white;
 }
 
 .adaptivetext > h2{
