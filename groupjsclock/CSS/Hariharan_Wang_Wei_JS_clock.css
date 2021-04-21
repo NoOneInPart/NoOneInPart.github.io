@@ -41,6 +41,7 @@ body{
     height: 756px;
     z-index: 2;
     left: 0;
+    top: 0;
     object-fit: cover;
     object-position: 0 0;
 }
@@ -59,6 +60,7 @@ p{
 svg{
     position: absolute;
     left: 0;
+    top: 0;
     margin-left: -110px;
     margin-top: -45px;
     z-index: 3;
@@ -133,18 +135,18 @@ svg > a > polygon:hover {
 }
 
 .utc-8{
-    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Alaska_Railroad%2C_Girdwood%2C_Alaska%2C_Estados_Unidos%2C_2017-08-31%2C_DD_40.jpg/1280px-Alaska_Railroad%2C_Girdwood%2C_Alaska%2C_Estados_Unidos%2C_2017-08-31%2C_DD_40.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/1_yosemite_valley_tunnel_view_2010.JPG/1280px-1_yosemite_valley_tunnel_view_2010.JPG) !important;
     background-position: center;
     background-size: cover;
-    /*Delso, Diego. "File:Alaska Railroad, Girdwood, Alaska, Estados Unidos, 2017-08-31, DD 40.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Alaska_Railroad,_Girdwood,_Alaska,_Estados_Unidos,_2017-08-31,_DD_40.jpg.*/
+    /*chensiyuan. "File:1 yosemite valley tunnel view 2010.JPG." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:1_yosemite_valley_tunnel_view_2010.JPG.*/
 }
 
-/*.utc-9{
+.utc-9{
     background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Skagway-Hoonah-Angoon_Census_Area%2C_In_to_the_Tunnel.jpg/1280px-Skagway-Hoonah-Angoon_Census_Area%2C_In_to_the_Tunnel.jpg) !important;
     background-position: center;
     background-size: cover;
     
-}*//*	ThreeIfByBike. "File:Skagway-Hoonah-Angoon Census Area, In to the Tunnel.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Skagway-Hoonah-Angoon_Census_Area,_In_to_the_Tunnel.jpg.*/
+}/*	ThreeIfByBike. "File:Skagway-Hoonah-Angoon Census Area, In to the Tunnel.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Skagway-Hoonah-Angoon_Census_Area,_In_to_the_Tunnel.jpg.*/
 
 .utc-10{
     background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/P%C4%81hoehoe_lava_meets_Pacific.jpg/1280px-P%C4%81hoehoe_lava_meets_Pacific.jpg) !important;
@@ -171,8 +173,8 @@ svg > a > polygon:hover {
     background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/1/10/Tavarua_Island%2C_Fiji.JPG) !important;
     background-position: center;
     background-size: cover;
-    /*Tavyland. “Fiji.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Tavarua_Island,_Fiji.JPG.*/
-}
+}   /*Tavyland. “Fiji.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Tavarua_Island,_Fiji.JPG.*/
+
 
 .utc11{
     background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Fryxellsee_Opt.jpg) !important;
