@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#info {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 0 1em;
+    font-size: 0.5em;
+    text-align: left;
+}
+
+#info::after{
+    content: "";
+}
+
+#map{
+    margin: auto;
+    width: 1707px;
+    height: 756px;
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 0;
+}
+
+#map > img{
+    width: 1707px;
+    height: 756px;
+}
+
+#nightband{
+    position: absolute;
+    width: 1707px;
+    height: 756px;
+    z-index: 2;
+    left: 0;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+p{
+    font-size: 0.75em;
+    text-align: left;
+}
+
+.standardbackground{
+    background-color:rgba(0, 0, 50, 0.5)!important;
+    background-position: center;
+    background-size: cover;
+}
+
+svg{
+    position: absolute;
+    left: 0;
+    margin-left: -110px;
+    margin-top: -45px;
+    z-index: 3;
+}
+
+svg > a > polygon {
+    fill: rgba(0,0,0,0);
+}
+
+svg > a > polygon:hover {
+    fill: rgba(255, 0, 0, 0.5);
+}
+
+.select {
+    fill: rgba(255, 0, 0, 0.5) !important;
+}
+
+.utc-0{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Tower_Bridge_from_Shad_Thames.jpg/1280px-Tower_Bridge_from_Shad_Thames.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    /*Colin. "File:Tower Bridge from Shad Thames.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Tower_Bridge_from_Shad_Thames.jpg.*/
+}
+
+.utc-1{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/7/7d/Calhau.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    /*Kotowski, Henryk. "File:Calhau.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Calhau.jpg.*/
+}
+
+.utc-2{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amanhecer_no_Hercules_--.jpg/1280px-Amanhecer_no_Hercules_--.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    /*Couto, Carlos Perez. "File:Amanhecer no Hercules --.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Amanhecer_no_Hercules_--.jpg.*/
+}
+
+.utc-3{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG/1280px-Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG) !important;
+    background-position: center;
+    background-size: cover;
+    /*Galuzzi, Luca. "File:Perito Moreno Glacier Patagonia Argentina Luca Galuzzi 2005.JPG." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG.*/
+}
+
+.utc-4{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Grafton%2C_Nova_Scotia.JPG/1280px-Grafton%2C_Nova_Scotia.JPG) !important;
+    background-position: center;
+    background-size: cover;
+    /*Sharingknowledge. "File:Grafton, Nova Scotia.JPG." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Grafton,_Nova_Scotia.JPG.*/
+}
+
+.utc-5{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Toronto_%2815085972212%29.jpg/1280px-Toronto_%2815085972212%29.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    /*Lai, Allen. "File:Toronto (15085972212).jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Toronto_(15085972212).jpg*/
+}
+
+.utc-6{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/9/98/Sam_Rayburn_Reservoir.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    /*Ricraider. "File:Sam Rayburn Reservoir.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Sam_Rayburn_Reservoir.jpg*/
+}
+
+.utc-7{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Deer_Creek_Reservoir.jpg/1280px-Deer_Creek_Reservoir.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    /*Ward, Eric. "File:Deer Creek Reservoir.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Deer_Creek_Reservoir.jpg*/
+}
+
+.utc-8{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Alaska_Railroad%2C_Girdwood%2C_Alaska%2C_Estados_Unidos%2C_2017-08-31%2C_DD_40.jpg/1280px-Alaska_Railroad%2C_Girdwood%2C_Alaska%2C_Estados_Unidos%2C_2017-08-31%2C_DD_40.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    /*Delso, Diego. "File:Alaska Railroad, Girdwood, Alaska, Estados Unidos, 2017-08-31, DD 40.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Alaska_Railroad,_Girdwood,_Alaska,_Estados_Unidos,_2017-08-31,_DD_40.jpg.*/
+}
+
+/*.utc-9{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Skagway-Hoonah-Angoon_Census_Area%2C_In_to_the_Tunnel.jpg/1280px-Skagway-Hoonah-Angoon_Census_Area%2C_In_to_the_Tunnel.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    
+}*//*	ThreeIfByBike. "File:Skagway-Hoonah-Angoon Census Area, In to the Tunnel.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Skagway-Hoonah-Angoon_Census_Area,_In_to_the_Tunnel.jpg.*/
+
+.utc-10{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/P%C4%81hoehoe_lava_meets_Pacific.jpg/1280px-P%C4%81hoehoe_lava_meets_Pacific.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    /*Inaglory, Brocken. "File:PÄhoehoe lava meets Pacific.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Skagway-Hoonah-Angoon_Census_Area,_In_to_the_Tunnel.jpg.*/
+}
+
+/*.utc-11{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/6/60/Niue_Coastline.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    
+}*//*fearlessRich. "File:Niue Coastline.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Niue_Coastline.jpg*/
+
+/*.utc-12{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/6/60/Niue_Coastline.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    
+}*//*fearlessRich. "File:Niue Coastline.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Niue_Coastline.jpg*/
+
+.utc12{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/1/10/Tavarua_Island%2C_Fiji.JPG) !important;
+    background-position: center;
+    background-size: cover;
+    /*Tavyland. “Fiji.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Tavarua_Island,_Fiji.JPG.*/
+}
+
+.utc11{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Fryxellsee_Opt.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    /*Mastroianni, Joe. “File:Fryxellsee Opt.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Fryxellsee_Opt.jpg*/
+}
+
+.utc10{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/c/ce/Motu_Maina.JPG) !important;
+    background-position: center;
+    background-size: cover;
+    /*Bullitt, Mr. “File:Motu Maina.JPG.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Motu_Maina.JPG.*/
+ }
+
+.utc9{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Korean_architecture_roof_detail_2.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   /*Appleby. “File:Korean architecture roof detail 2.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Korean_architecture_roof_detail_2.jpg.*/
+}
+
+.utc8{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Singapore_Skyline_2019-10.jpg/1280px-Singapore_Skyline_2019-10.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   /*Unwicked. “File:Singapore Skyline 2019-10.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Singapore_Skyline_2019-10.jpg.*/
+}
+
+.utc7{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://www.wikilovesmonuments.org/wp-content/uploads/2012/10/Chapelle_Notre-Dame-de-Bon-Secours_-_Mus%C3%A9e_Marguerite-Bourgeoys.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   /*Million, Jazmin. “File:Chapelle Notre-Dame-de-Bon-Secours - Musée Marguerite-Bourgeoys.jpg” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Chapelle_Notre-Dame-de-Bon-Secours_-_Musée_Marguerite-Bourgeoys.jpg.*/
+}
+
+.utc6{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tashigang_Dzong_111120.jpg/1280px-Tashigang_Dzong_111120.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   /*Fynn, Christopher J. “File:Tashigang Dzong 111120.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Tashigang_Dzong_111120.jpg.*/
+}
+
+.utc5{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/%D0%9C%D0%B0%D1%83%D0%B7%D0%BE%D0%BB%D0%B5%D1%98_%D0%A5%D0%BE%D0%B4%D0%B6%D0%B5_%D0%90%D1%85%D0%BC%D0%B5%D0%B4%D0%B0_%D0%88%D0%B0%D1%81%D0%B0%D0%B2%D0%B8%D1%98%D0%B0_%28%D0%B3%D1%80%D0%B0%D0%B4_%D0%A2%D1%83%D1%80%D0%BA%D0%B5%D1%81%D1%82%D0%B0%D0%BD%2C_%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%29.jpg/1280px-%D0%9C%D0%B0%D1%83%D0%B7%D0%BE%D0%BB%D0%B5%D1%98_%D0%A5%D0%BE%D0%B4%D0%B6%D0%B5_%D0%90%D1%85%D0%BC%D0%B5%D0%B4%D0%B0_%D0%88%D0%B0%D1%81%D0%B0%D0%B2%D0%B8%D1%98%D0%B0_%28%D0%B3%D1%80%D0%B0%D0%B4_%D0%A2%D1%83%D1%80%D0%BA%D0%B5%D1%81%D1%82%D0%B0%D0%BD%2C_%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%29.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   /*Milošević, Petar. “File:Маузолеј Ходже Ахмеда Јасавија (град Туркестан, Казахстан).jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Маузолеј_Ходже_Ахмеда_Јасавија_(град_Туркестан,_Казахстан).jpg.*/
+}
+
+.utc4{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/f/f8/Samara_P5171857_2200.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   /*Alexxx1979. “File:Samara P5171857 2200.jpg.” Wikimedia Commons, Wikimedia Foundation, upload.wikimedia.org/wikipedia/commons/f/f8/Samara_P5171857_2200.jpg.*/
+}
+
+.utc3{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/1992_Mukalla.jpg/1280px-1992_Mukalla.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   /*Tichy, Ion. “File:1992 Mukalla.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:1992_Mukalla.jpg.*/
+}
+
+.utc2{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/0/09/South_African_Giraffes%2C_fighting.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   /*Robertson, D. Gordon E. “File:South African Giraffes, fighting.jpg.” Wikimedia Commons, Wikimedia Foundation, upload.wikimedia.org/wikipedia/commons/thumb/0/09/South_African_Giraffes%2C_fighting.jpg/220px-South_African_Giraffes%2C_fighting.jpg.*/
+}
+
+.utc1{
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/f/f4/Kunoy.10.jpg) !important;
+    background-position: center;
+    background-size: cover;
+   /*Christensen, Erik. “File:Kunoy.10.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Kunoy.10.jpg.*/
+}

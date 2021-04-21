@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hariharan_Wang_Wei_JS_clock_redesign_UTC+10
+        </title>
+        <link rel="stylesheet" type="text/css" href="../CSS/Hariharan_Wang_Wei_JS_clock.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div hidden id="minusElevenclock"></div>
+        <div hidden id="minusTenclock"></div>
+        <div hidden id="minusNineclock"></div>
+        <div hidden id="minusEightclock"></div>
+        <div hidden id="minusSevenclock"></div>
+        <div hidden id="minusSixclock"></div>
+        <div hidden id="minusFiveclock"></div>
+        <div hidden id="minusFourclock"></div>
+        <div hidden id="minusThreeclock"></div>
+        <div hidden id="minusTwoclock"></div>
+        <div hidden id="minusOneclock"></div>
+        <div hidden id="zeroClock"></div>
+        <div hidden id="plusOneclock"></div>
+        <div hidden id="plusTwoclock"></div>
+        <div hidden id="plusThreeclock"></div>
+        <div hidden id="plusFourclock"></div>
+        <div hidden id="plusFiveclock"></div>
+        <div hidden id="plusSixclock"></div>
+        <div hidden id="plusSevenclock"></div>
+        <div hidden id="plusEightclock"></div>
+        <div hidden id="plusNineclock"></div>
+        <div id="plusTenclock"></div>
+        <div hidden id="plusElevenclock"></div>
+        <div hidden id="plusTwelveclock"></div>
+        <div id="map" class="utc10">
+            <img src="../assets/Hariharan_Wang_Wei_JS_clock_blankmap.svg" alt="map of world excluding antartica">
+            <img src="../assets/Hariharan_Wang_Wei_JS_clock_mapband.png" alt="black bands for overlaying on map to denote nighttime" id="nightband" class="daynight">
+            <svg width="1707" height="756" class="region">
+                
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC-10.htm" alt="UTC-10">
+                    <polygon points="168,353,168,391,213,391,213,353">
+                        <title>UTC-10</title>
+                    </polygon>
+                </a>
+                
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC-8.htm" alt="UTC-8">
+                    <polygon points="451,122,395,171,343,179,247,208,244,197,301,177,302,150,380,112,410,112">
+                        <title>UTC-8</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC-7.htm" alt="UTC-7">
+                    <polygon points="451,122,395,171,402,234,379,274,380,294,411,363,430,388,431,325,421,290,422,267,415,251,442,180,473,125                     
+                    ">
+                        <title>UTC-7</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC-6.htm" alt="UTC-6">
+                    <polygon points="602,79,482,101,473,125,442,180,415,251,422,267,421,290,431,325,431,360,430,388,522,508,543,396,496,387,487,404,442,388,441,355,489,227,543,137,609,139,699,69
+                    ">
+                        <title>UTC-6</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC-5.htm" alt="UTC-5">
+                    <polygon points="699,69,609,139,543,137,489,227,441,355,442,388,487,404,496,387,543,396,522,508,590,775,595,509,596,420,527,362,525,323,545,261,554,231,542,232,616,151
+                    ">
+                        <title>UTC-5</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC-4.htm" alt="UTC-4">
+                    <polygon points="761,67,699,69,616,151,542,232,554,231,545,261,525,323,527,362,596,420,595,509,590,775,630,785,657,632,686,536,655,498,674,453,639,224,679,209,664,194,698,174,725,140,705,90
+                    ">
+                        <title>UTC-4</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC-3.htm" alt="UTC-3">
+                    <polygon points="664,194,679,209,639,224,674,453,655,498,686,536,657,632,647,690,629,785,690,775,771,516,697,214,688,180                                                          
+                    ">
+                        <title>UTC-3</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC-2.htm" alt="UTC-2">
+                    <polygon points="761,67,705,90,712,107,736,105,728,161,760,175,849,125,843,118,849,109,867,99,859,96,863,89,900,79,899,59
+                    ">
+                        <title>UTC-2</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC-0.htm" alt="UTC-0">
+                    <polygon points="880,89,863,89,859,96,867,99,849,109,843,118,849,125,854,135,830,153,771,297,821,372,833,454,872,469,931,465,915,414,928,382,876,337,843,353,868,169,893,123
+                    ">
+                        <title>UTC-0</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC1.htm" alt="UTC1">
+                    <polygon points="928,159,893,123,868,169,843,353,876,337,928,382,915,414,931,465,966,572,1031,575,1000,463,1040,455,1020,378,963,341,968,285,963,277,891,293,879,292,886,264,873,264,873,262,879,223,926,215,937,197,923,131
+                    ">
+                        <title>UTC+1</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC2.htm" alt="UTC2">
+                    <polygon points="1038,66,938,67,923,131,937,197,926,215,879,223,873,262,886,264,879,292,891,293,963,277,968,285,963,341,1020,378,1040,455,1000,463,1031,576,966,572,963,579,968,675,1073,666,1116,532,1072,538,1054,481,1054,460,1083,459,1089,370,1064,304,994,286,1015,264,1005,240,1011,226,1013,201,998,188,997,153,1007,144,1021,108
+                    ">
+                        <title>UTC+2</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC3.htm" alt="UTC3">
+                    <polygon points="1038,66,1021,108,1007,144,997,153,998,188,1013,201,1011,226,1005,240,1015,264,994,286,1064,304,1089,370,1085,429,1083,459,1054,460,1054,481,1072,538,1116,532,1103,626,1141,620,1146,601,1159,393,1153,381,1167,375,1165,362,1149,354,1090,253,1127,264,1106,213,1090,208,1090,203,1100,200,1098,191,1120,190,1119,164,1138,165,1152,127,1135,108,1161,66
+                    ">
+                        <title>UTC+3</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC4.htm" alt="UTC4">
+                    <polygon points="1138,165,1119,164,1120,190,1098,191,1100,200,1090,203,1090,208,1106,213,1127,264,1090,253,1149,354,1165,362,1167,375,1153,381,1159,393,1178,388,1192,361,1178,353,1170,340,1149,354,1090,253,1099,267,1135,272,1127,264,1106,213
+                    ">
+                        <title>UTC+4</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC4.htm" alt="UTC4:30">
+                    <polygon points="1098,267,1149,354,1170,340,1178,353,1197,348,1195,331,1239,287
+    
+                    ">
+                        <title>UTC+4</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC5.htm" alt="UTC5">
+                    <polygon points="1176,98,1135,108,1152,127,1138,165,1106,213,1127,264,1135,272,1239,287,1195,331,1197,348,1178,353,1238,351,1247,299,1256,296,1234,275,1218,261,1161,199,1170,178,1191,131
+                    ">
+                        <title>UTC+5</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC5.htm" alt="UTC5:30">
+                    <polygon points="1256,296,1247,299,1238,352,1180,353,1281,480,1301,437,1318,350,1333,348,1329,363,1336,369,1352,332,1329,334,1329,341,1317,340,1316,333,1311,334,1310,343,1274,330,1278,321
+                    ">
+                        <title>UTC+5</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC5.htm" alt="UTC5:45">
+                    <polygon points="1278,321,1274,330,1310,343,1311,334
+                    ">
+                        <title>UTC+5</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC6.htm" alt="UTC6">
+                    <polygon points="1170,178,1161,199,1218,261,1234,275,1278,321,1311,334,1316,333,1317,340,1329,341,1329,334,1352,332,1335,369,1329,363,1333,348,1318,350,1318,367,1329,363,1336,369,1352,332,1329,334,1316,333,1311,334,1278,321,1234,275,1260,256,1263,216,1194,181,1193,172
+                    ">
+                        <title>UTC+6</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC6.htm" alt="UTC6:30">
+                    <polygon points="1352,332,1332,369,1360,422,1372,424,1373,407,1363,378,1376,368,1367,351,1362,338
+                    ">
+                        <title>UTC+6</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC7.htm" alt="UTC7">
+                    <polygon points="1186,70,1176,98,1191,131,1170,178,1193,172,1194,181,1274,222,1260,200,1264,210,1256,296,1278,321,1311,234,1362,332,1362,338,1357,351,1376,368,1363,378,1373,407,1372,424,1325,486,1480,557,1520,535,1520,529,1513,512,1452,512,1454,474,1397,467,1373,456,1430,419,1405,368,1393,358,1376,368,1357,351,1362,332,1311,234,1278,321,1256,296,1258,275,1260,256,1274,222,1318,249,1302,176,1318,157,1278,70
+                    ">
+                        <title>UTC+7</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC8.htm" alt="UTC8">
+                    <polygon points="1318,157,1302,176,1318,249,1274,222,1260,256,1234,275,1256,296,1278,321,1311,334,1352,332,1362,338,1376,368,1393,358,1405,368,1430,419,1373,456,1397,467,1454,474,1452,512,1513,512,1520,529,1520,535,1480,557,1404,614,1423,682,1496,651,1514,541,1554,513,1527,501,1452,271,1460,260,1472,253,1469,226,1457,223,1451,224,1401,200,1389,219,1330,211,1363,174,1335,175
+                    ">
+                        <title>UTC+8</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC9.htm" alt="UTC9">
+                    <polygon points="1411,70,1278,70,1318,157,1335,175,1363,174,1330,211,1389,219,1401,200,1451,224,1457,230,1469,226,1472,253,1460,260,1452,271,1527,500,1554,513,1551,529,1569,532,1570,489,1531,237,1503,241,1482,261,1472,253,1469,226,1459,140,1443,173,1456,160,1454,142,1431,151,1361,110,1411,110
+                    ">
+                        <title>UTC+9</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC9.htm" alt="UTC9:30">
+                    <polygon points="1551,529,1514,541,1496,651,1525,692,1545,615,1538,610
+                    ">
+                        <title>UTC+9</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC10.htm" alt="UTC10">
+                    <polygon points="1411,110,1361,110,1431,151,1460,142,1461,160,1463,173,1470,230,1464,226,1472,253,1482,261,1503,241,1531,237,1570,489,1569,532,1551,529,1538,610,1545,615,1525,682,1545,744,1617,619,1634,457,1531,237,1503,241,1471,185,1471,140,1453,140
+                    " class="select">
+                        <title>UTC+10</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC11.htm" alt="UTC11">
+                    <polygon points="1510,110,1411,110,1453,140,1471,140,1471,185,1503,241,1531,237,1514,172,1527,151,1512,135
+                    ">
+                        <title>UTC+11</title>
+                    </polygon>
+                </a>
+    
+                <a href="Hariharan_Wang_Wei_JS_clockredesign_UTC12.htm" alt="UTC12">
+                    <polygon points="1675,110,1510,110,1512,135,1527,151,1514,172,1531,237,1634,457,1617,619,1545,744,1783,789,1801,418">
+                        <title>UTC+12</title>
+                    </polygon>
+                </a>
+    
+            </svg>  
+        </div>
+        <div id='info'></div>
+        <!--<div id="coolclock" class="clock_border"> 
+            <div class="hourmark mark17"></div>
+            <div class="hourmark mark28"></div>
+            <div class="hourmark mark410"></div>
+            <div class="hourmark mark511"></div>
+            <div class="inner_Clock_face">
+                <div class="hand hour"></div>
+                <div class="hand minute"></div>
+                <div class="hand second"></div>
+            </div>
+        </div>-->
+        <script type="text/javascript" src="../JS/Hariharan_Wang_Wei_JS.js"></script>
+        <script type="text/javascript" src="../JS/Hariharan_Wang_Wei_JSDigitalClock.js"></script>
+    </body>
+</html>
+<!-- anything within these is called a comment: place textual information for other web designers, UX/UI, and reminders and notes to yourself as to why you coded something a certain way.
+
+Bibliography citations
+
+<>tags most Elements are (open and closed) tags; some are not
+<b> Tags are read by the DOM= Browser and employ scripts to have text readout a certain format, design, programmed way </b>
+
+Expressions are tags and the elements combined:
+<p> This is an expression</p>
+
+Canuckguy. "File:BlankMap-World-Compact.svg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:BlankMap-World-Compact.svg.
+
+-->
