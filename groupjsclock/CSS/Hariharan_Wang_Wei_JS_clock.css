@@ -3,7 +3,7 @@ body{
     color: white;
     background-color: black;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -21,9 +21,8 @@ body{
 }
 
 #map{
-    margin: auto;
-    width: 1707px;
-    height: 756px;
+    min-height: 100%;
+    max-width: 100%;
     content: "";
     display: block;
     position: relative;
@@ -31,14 +30,12 @@ body{
 }
 
 #map > img{
-    width: 1707px;
-    height: 756px;
+    width: 100%;
 }
 
 #nightband{
     position: absolute;
-    width: 1707px;
-    height: 756px;
+    height: 100%;
     z-index: 2;
     left: 0;
     top: 0;
@@ -61,8 +58,10 @@ svg{
     position: absolute;
     left: 0;
     top: 0;
-    margin-left: -110px;
-    margin-top: -45px;
+    width: 100%;
+    height: 100%;
+    margin-left: -6.5%;
+    margin-top: -2.7%;
     z-index: 3;
 }
 
