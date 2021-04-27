@@ -6,6 +6,7 @@
         </title>
         <link rel="stylesheet" type="text/css" href="CSS/Hariharan_Wang_Wei_JS_clock.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <meta name="color-scheme" content="dark">
     </head>
     <body>
         Select A Region:
@@ -240,22 +241,31 @@ Things that have been attempted:
 -svg polygon absolute with its own size and padding in its own div below everything
 
 Bibliography:
-"<title> — the SVG accessible name element." MDN Web Docs, Mozilla, developer.mozilla.org/en-US/docs/Web/SVG/Element/title.
-"<a>." MDN Web Docs, Mozilla, developer.mozilla.org/en-US/docs/Web/SVG/Element/a.
+"<title> — the SVG accessible name element." MDN Web Docs, Mozilla, developer.mozilla.org/en-US/docs/Web/SVG/Element/title. 
+    (add titles to each polygon of SVG)
+"<a>." MDN Web Docs, Mozilla, developer.mozilla.org/en-US/docs/Web/SVG/Element/a. 
+    (make every polygon a link)
 Alexxx1979. “File:Samara P5171857 2200.jpg.” Wikimedia Commons, Wikimedia Foundation, upload.wikimedia.org/wikipedia/commons/f/f8/Samara_P5171857_2200.jpg.
 Appleby. “File:Korean architecture roof detail 2.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Korean_architecture_roof_detail_2.jpg.
 Bullitt, Mr. “File:Motu Maina.JPG.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Motu_Maina.JPG.
-"Bringing our CSS clock to life using JavaScript's requestAnimationFrame() method." Javascript Kit, www.javascriptkit.com/dhtmltutors/css3clock2.shtml.
+"Bringing our CSS clock to life using JavaScript's requestAnimationFrame() method." Javascript Kit, www.javascriptkit.com/dhtmltutors/css3clock2.shtml. 
+    (used JS code of analog clock to modify and make the black bands move around)
 Canuckguy. "File:BlankMap-World-Compact.svg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:BlankMap-World-Compact.svg.
 chensiyuan. "File:1 yosemite valley tunnel view 2010.JPG." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:1_yosemite_valley_tunnel_view_2010.JPG.
 Delso, Diego. "File:Alaska Railroad, Girdwood, Alaska, Estados Unidos, 2017-08-31, DD 40.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Alaska_Railroad,_Girdwood,_Alaska,_Estados_Unidos,_2017-08-31,_DD_40.jpg.
-"Chapter 8: Coordinate Systems, Transformations and Units." W3C, www.w3.org/TR/SVG/coords.html#ExampleViewBox.
+"Chapter 8: Coordinate Systems, Transformations and Units." W3C, www.w3.org/TR/SVG/coords.html#ExampleViewBox. 
+    (make the svg floating on top the exact same size as the DIV of the maps)
 Christensen, Erik. “File:Kunoy.10.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Kunoy.10.jpg.
 Colin. "File:Tower Bridge from Shad Thames.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Tower_Bridge_from_Shad_Thames.jpg.
+"Day and Night World Map." Time And Date, www.timeanddate.com/worldclock/sunearth.html.
+    (map reference used to create black band overlay denoting time of day)
 Fynn, Christopher J. “File:Tashigang Dzong 111120.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Tashigang_Dzong_111120.jpg.
-Hari. "Javascript - Track mouse position." Stack Overflow, 17 Oct. 2011, stackoverflow.com/questions/7790725/javascript-track-mouse-position.
-"HTML <map> Tag>" W3Schools, www.w3schools.com/tags/tag_map.asp.
+Hari. "Javascript - Track mouse position." Stack Overflow, 17 Oct. 2011, stackoverflow.com/questions/7790725/javascript-track-mouse-position. 
+    (temporarily used to find coordinates of points on the map in order to create the SVG, code not used in final version)
+"HTML <map> Tag." W3Schools, www.w3schools.com/tags/tag_map.asp.
+    (previous method of using a usemap to make the image clickable [now replaced with SVG method])
 "HTML Image Maps." W3Schools, www.w3schools.com/html/html_images_imagemap.asp.
+    (previous method of using a usemap to make the image clickable [now replaced with SVG method])
 Inaglory, Brocken. "File:PÄhoehoe lava meets Pacific.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Skagway-Hoonah-Angoon_Census_Area,_In_to_the_Tunnel.jpg.
 Kotowski, Henryk. "File:Calhau.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Calhau.jpg.
 Lai, Allen. "File:Toronto (15085972212).jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Toronto_(15085972212).jpg.
@@ -263,16 +273,21 @@ Mastroianni, Joe. “File:Fryxellsee Opt.jpg.” Wikimedia Commons, Wikimedia Fo
 Million, Jazmin. “File:Chapelle Notre-Dame-de-Bon-Secours - Musée Marguerite-Bourgeoys.jpg” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Chapelle_Notre-Dame-de-Bon-Secours_-_Musée_Marguerite-Bourgeoys.jpg.
 Milošević, Petar. “File:Маузолеј Ходже Ахмеда Јасавија (град Туркестан, Казахстан).jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Маузолеј_Ходже_Ахмеда_Јасавија_(град_Туркестан,_Казахстан).jpg.
 Neir0. "place SVG over html elements." Stack Overflow, 7 Jul. 2011, stackoverflow.com/questions/6609114/place-svg-over-html-elements.
+    (make the SVG float over the other map parts)
 Petitcolas, Jonathan. "Create a clickable SVG map." Jonathan Petitcolas, 18 Jul. 2013, www.jonathan-petitcolas.com/2013/07/18/create-clickable-svg-france-regions-map.html.
+    (information on adding hyperlinks to SVG assets)
 Ricraider. "File:Sam Rayburn Reservoir.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Sam_Rayburn_Reservoir.jpg.
 Robertson, D. Gordon E. “File:South African Giraffes, fighting.jpg.” Wikimedia Commons, Wikimedia Foundation, upload.wikimedia.org/wikipedia/commons/thumb/0/09/South_African_Giraffes%2C_fighting.jpg/220px-South_African_Giraffes%2C_fighting.jpg.
 Sharingknowledge. "File:Grafton, Nova Scotia.JPG." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Grafton,_Nova_Scotia.JPG.
 "SVG <polygon>" W3Schools, www.w3schools.com/graphics/svg_polygon.asp.
+    (information on how to code points in SVG polygons)
 mulllhausen. "svg inside a scaling div." Stack Overflow, 15 Aug. 2013, stackoverflow.com/questions/18253449/svg-inside-a-scaling-div.
+    (information on how to make the SVG scale to the same size as the rest of the map)
 Tavyland. “Fiji.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Tavarua_Island,_Fiji.JPG.
 ThreeIfByBike. "File:Skagway-Hoonah-Angoon Census Area, In to the Tunnel.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Skagway-Hoonah-Angoon_Census_Area,_In_to_the_Tunnel.jpg.
 Tichy, Ion. “File:1992 Mukalla.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:1992_Mukalla.jpg.
-"Time Zone Map." Time And Date, www.timeanddate.com/time/map/.
+"Time Zone Map." Time And Date, www.timeanddate.com/time/map.
+    (map reference used to configure time zones)
 Unwicked. “File:Singapore Skyline 2019-10.jpg.” Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Singapore_Skyline_2019-10.jpg.
 Ward, Eric. "File:Deer Creek Reservoir.jpg." Wikimedia Commons, Wikimedia Foundation, commons.wikimedia.org/wiki/File:Deer_Creek_Reservoir.jpg.
 -->
