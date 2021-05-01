@@ -18,13 +18,18 @@ body {
     width: 100%;
     -webkit-backdrop-filter: saturate(175%) blur(20px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
     backdrop-filter: saturate(160%) blur(20px); /* magic blurred background thing */
-    font-size: 0.75em;
+    font-size: 0.8em;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 #contact {
     float: right;
     padding: 0 2em;
+}
+
+#contact > a {
+    text-decoration: none !important;
+    padding-left: 1em;
 }
 
 #contact > a > img {
@@ -37,43 +42,44 @@ body {
     to {opacity: 1;}
 }
 
-@keyframes movedown {
-    from {padding-top: 0;}
-    to {padding-top: 1em;}
-}
-
 .textbox{
     max-width: 25em;
-    font-size: 2em;
+    font-size: 1.8em;
     margin: 0 auto;
     padding: 2em;
-    padding-top: 1em;
+    padding-top: 0;
     opacity: 0;
-    animation: fade 1s ease-out 0.5s, movedown 1s ease-out 0.5s;
+    animation: fade 1s ease-out 0.5s;
     animation-fill-mode: forwards;
 }
 
 .adaptive{
     display: flex;
     flex-wrap: wrap;
+    max-height: 50em;
 }
 
 @media (max-width: 60em) {
     .textbox{
-        font-size: 1.5em !important;
+        font-size: 1.75em !important;
     }
 }
 
-@media (max-width: 35em) {
+@media (max-width: 40em) {
     .adaptive {
       flex-direction: column;
+      max-height: none !important;
     }
     #nameboxthing{
         height: 40vh !important;
     }
     .textbox{
-        font-size: 1.5em !important;
+        font-size: 1.75em !important;
         padding: 1em 1em 1em 1em !important;
+    }
+    #boardpic{
+        max-height: 40em;
+        min-height: 15em !important;
     }
   }
 
@@ -82,26 +88,25 @@ body {
     min-height: 10em;
     flex-grow: 1;
     opacity: 0;
-    animation: fade 1s ease-out 0.5s, movedown 1s ease-out 0.5s;
+    animation: fade 1s ease-out 0.5s;
     animation-fill-mode: forwards;
     position: relative;
 }
 
 #boardpic > img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
 }
 
 .adaptivetext{
     flex: 2%;
-    padding-bottom: 1em;
-    padding-right: 1em;
+    padding-right: 2em;
     margin: 0 !important;
     max-width: none !important;
     background-color: white;
-}
-
-.adaptivetext > h2{
-    margin-top: 0;  
+    font-size: 1.8em;
 }
 
 li{
@@ -136,7 +141,7 @@ li{
 }
 
 .profilebanner{
-    background-image: url("../image/banner.jpg");
+    background-image: url("../image/wei_clientwork_banner.jpg");
     background-color: white;
     background-position: left;
     background-size: cover;
@@ -144,7 +149,7 @@ li{
 }
 
 .blogbanner{
-    background-image: url("../image/banner2.jpg");
+    background-image: url("../image/wei_clientwork_banner2.jpg");
     background-color: white;
     background-position: left;
     background-size: cover;
@@ -205,4 +210,22 @@ footer > a{
     max-height: 20em;
     margin: 0 auto;
     display: block;
+}
+
+#contactinfo {
+    display: block;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 1em;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)), url("../image/wei_clientwork_userPFP.jpg");
+    background-color: black;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textboxobj{
+    max-width: 25em !important;
+    margin: 0 auto !important;
 }
