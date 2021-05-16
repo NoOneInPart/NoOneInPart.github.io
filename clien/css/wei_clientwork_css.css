@@ -74,12 +74,21 @@ body {
         height: 40vh !important;
     }
     .textbox{
-        font-size: 1.75em !important;
+        font-size: 1.4em !important;
         padding: 1em 1em 1em 1em !important;
     }
     #boardpic{
         max-height: 40em;
         min-height: 15em !important;
+    }
+    .post > h2{
+        font-size: 1.4em !important;
+    }
+    .post > h3{
+        font-size: 0.9em !important;
+    }
+    .post > p{
+        font-size: 0.9em !important;
     }
   }
 
