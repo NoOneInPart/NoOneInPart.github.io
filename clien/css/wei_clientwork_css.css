@@ -6,20 +6,16 @@ body {
     background-color: white;
 }
 
-.bolder{
-    font-weight: 700;
-}
-
 #navbar {
     z-index: 1;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(235,235,235,0.75);
     padding: 0.5em 1em;
     width: 100%;
     -webkit-backdrop-filter: saturate(175%) blur(20px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
-    backdrop-filter: saturate(160%) blur(20px); /* magic blurred background thing */
+    backdrop-filter: saturate(175%) blur(20px); /* magic blurred background thing */
     font-size: 0.8em;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 #contact {
@@ -43,8 +39,8 @@ body {
 }
 
 .textbox{
-    max-width: 25em;
-    font-size: 1.8em;
+    max-width: 30em;
+    font-size: 1.5em;
     margin: 0 auto;
     padding: 2em;
     padding-top: 0;
@@ -58,39 +54,6 @@ body {
     flex-wrap: wrap;
     max-height: 50em;
 }
-
-@media (max-width: 60em) {
-    .textbox{
-        font-size: 1.75em !important;
-    }
-}
-
-@media (max-width: 40em) {
-    .adaptive {
-      flex-direction: column;
-      max-height: none !important;
-    }
-    #nameboxthing{
-        height: 40vh !important;
-    }
-    .textbox{
-        font-size: 1.4em !important;
-        padding: 1em 1em 1em 1em !important;
-    }
-    #boardpic{
-        max-height: 40em;
-        min-height: 15em !important;
-    }
-    .post > h2{
-        font-size: 1.4em !important;
-    }
-    .post > h3{
-        font-size: 0.9em !important;
-    }
-    .post > p{
-        font-size: 0.9em !important;
-    }
-  }
 
 #boardpic{
     flex: 5%;
@@ -114,8 +77,9 @@ body {
     padding-right: 2em;
     margin: 0 !important;
     max-width: none !important;
+    min-height: 15em;
     background-color: white;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 li{
@@ -123,7 +87,7 @@ li{
 }
 
 #navbar > a {
-    color: white;
+    color: black;
     font-size: 2em;
     padding: 0 1em 0 0;
     text-decoration: none;
@@ -132,6 +96,10 @@ li{
 #navbar > a:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+a {
+    color: black;
 }
 
 
@@ -147,6 +115,31 @@ li{
     position: relative;
     animation: fade 1s ease-out;
     overflow: hidden;
+}
+
+#nameboxthing > #nameboxtitle > h1 {
+    margin: 0;
+    padding: 0.1em;
+    font-size: 7.5em;
+}
+
+#nameboxtitle{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.25em;
+    display: block;
+    background-color: rgba(235,235,235,0.75);
+    -webkit-backdrop-filter: saturate(175%) blur(20px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
+    backdrop-filter: saturate(175%) blur(20px); /* magic blurred background thing */
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.profiletitle {
+    right: 0;
+    left: unset !important;
+    transform: translate(-20%, -50%) !important;
 }
 
 .profilebanner{
@@ -182,7 +175,7 @@ li{
 footer{
     background-color: black;
     color: white;
-    padding: 1em 1em 0.5em 1em;
+    padding: 0;
 }
 
 footer > a{
@@ -194,20 +187,24 @@ footer > a{
     margin: 1em auto;
 }
 
+.firstpost {
+    border-bottom: 0 !important;
+}
+
 .post > h2, h3{
     margin: 0;
 }
 
 .post > h2{
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 .post > h3{
-    font-size: 0.6em;
+    font-size: 0.75em;
     color:rgb(64, 64, 64);
     font-weight: normal;
 }
 .post > p{
-    font-size: 0.75em;
+    font-size: 1em;
 }
 
 .post > video{
@@ -226,6 +223,7 @@ footer > a{
     max-width: none !important;
     margin: 0 !important;
     padding: 1em;
+    padding-bottom: 0.1em;
     color: white;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)), url("../image/wei_clientwork_userPFP.jpg");
     background-color: black;
@@ -234,7 +232,61 @@ footer > a{
     background-repeat: no-repeat;
 }
 
+#contactinfo * {
+    color: white;
+}
+
+#footerbox {
+    background-color: black;
+    color: white;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+#footerbox > p {
+    font-size: 0.75em;
+}
+
 .textboxobj{
-    max-width: 25em !important;
+    max-width: 30em;
     margin: 0 auto !important;
+}
+
+@media (max-width: 40em) {
+    .adaptive {
+      flex-direction: column;
+      max-height: none !important;
+    }
+    #nameboxthing{
+        height: 40vh !important;
+    }
+    .textbox{
+        font-size: 1.4em !important;
+    }
+    #boardpic{
+        max-height: 40em;
+        min-height: 15em !important;
+    }
+    .post > h2{
+        font-size: 1.4em !important;
+    }
+    .post > h3{
+        font-size: 0.9em !important;
+    }
+    .post > p{
+        font-size: 0.9em !important;
+    }
+    .adaptivetext{
+        padding: 0 1em 1em 1em !important;
+        min-height: unset;
+    }
+    #nameboxthing > #nameboxtitle > h1 {
+        font-size: 4em !important;
+    }
+    #nameboxtitle {
+        bottom: 0 !important;
+        right: 0 !important;
+        left: unset !important;
+        transform: unset !important;
+    }
 }
