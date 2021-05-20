@@ -1,0 +1,125 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.header {
+	background-color: #222222;
+}
+
+.headerLeft {
+	float: left;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 22px 10px;
+}
+
+.tab {
+	padding-left: 20px;
+}
+
+.headerTitle {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 1000;
+	float: none;
+	padding: 10px;
+}
+
+.column {
+	width: 50%;
+	float: left;
+	background-color: #222222;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.fullColumn {	
+	background-color: #222222;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+@media screen and (max-aspect-ratio: 12/10) {
+	.column {
+		width: 100%;
+		border-bottom: 0px;
+  	}
+}
+
+@media screen and (min-resolution: 200dpi) {
+	body {
+  		font-size: 20px;
+  	}
+}
+
+.codeExample {
+	background-color: white;
+	font-family: monospace;
+	color: black;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.center {
+	text-align: center;
+}
+
+.bigButton {
+	width: 100%;
+	padding: 50px 0px;
+	font-weight: lighter;
+	text-align: center;
+	font-size: 50px;
+	background-color: #222222;
+}
+
+.inlineButton {
+	border: 1px solid white;
+	padding: 2px;
+	box-sizing: border-box;
+}
+
+.boldText {
+	font-weight: bold;
+}
+
+.normalText {
+	font-weight: 100;
+}
+
+.padTop {
+	padding: 10px 0px;
+}
+
+a:link, a:visited {
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	background-color: white;
+	color: black;
+	text-decoration: underline;
+}
+
+.code {
+	font-family: monospace;
+}
+
+.whiteBg {
+	background-color: white;
+}
+
+table, th, td {
+	border: 1px solid white;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 5px;
+}

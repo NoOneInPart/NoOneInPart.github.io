@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700);
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro','Tahoma',sans-serif;
+    background-color: white;
+}
+
+#navbar {
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(235,235,235,0.75);
+    padding: 0.5em 1em;
+    width: 100%;
+    -webkit-backdrop-filter: saturate(175%) blur(20px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
+    backdrop-filter: saturate(175%) blur(20px); /* magic blurred background thing */
+    font-size: 0.8em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#contact {
+    float: right;
+    padding: 0 2em;
+}
+
+#contact > a {
+    text-decoration: none !important;
+    padding-left: 1em;
+}
+
+#contact > a > img {
+    height: 2.5em;
+    max-width: 100%;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.textbox{
+    max-width: 30em;
+    font-size: 1.5em;
+    margin: 0 auto;
+    padding: 2em;
+    padding-top: 0;
+    opacity: 0;
+    animation: fade 1s ease-out 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.adaptive{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 50em;
+}
+
+#boardpic{
+    flex: 5%;
+    min-height: 10em;
+    flex-grow: 1;
+    opacity: 0;
+    animation: fade 1s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+#boardpic > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.adaptivetext{
+    flex: 2%;
+    padding-right: 2em;
+    margin: 0 !important;
+    max-width: none !important;
+    min-height: 15em;
+    background-color: white;
+    font-size: 1.5em;
+}
+
+li{
+    padding-bottom: 0.2em;
+}
+
+#navbar > a {
+    color: black;
+    font-size: 2em;
+    padding: 0 1em 0 0;
+    text-decoration: none;
+}
+
+#navbar > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+}
+
+
+.selected{
+    text-decoration: underline !important;
+}
+
+#nameboxthing{
+    width: 100%;
+    height: 65vh;
+    min-height: 20em;
+    display: block;
+    position: relative;
+    animation: fade 1s ease-out;
+    overflow: hidden;
+}
+
+#nameboxthing > #nameboxtitle > h1 {
+    margin: 0;
+    padding: 0.1em;
+    font-size: 7.5em;
+}
+
+#nameboxtitle{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.25em;
+    display: block;
+    background-color: rgba(235,235,235,0.75);
+    -webkit-backdrop-filter: saturate(175%) blur(20px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
+    backdrop-filter: saturate(175%) blur(20px); /* magic blurred background thing */
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.profiletitle {
+    right: 0;
+    left: unset !important;
+    transform: translate(-20%, -50%) !important;
+}
+
+.profilebanner{
+    background-image: url("../image/wei_clientwork_banner.jpg");
+    background-color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blogbanner{
+    background-image: url("../image/wei_clientwork_banner2.jpg");
+    background-color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bannervid{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 1s ease 2s 1;
+    animation-fill-mode: forwards;
+}
+
+#bannervid > img{
+    z-index: 3;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 0;
+}
+
+footer > a{
+    color: white;
+}
+
+.post{
+    border-bottom: 1px rgb(0,0,0,0.25) solid;
+    margin: 1em auto;
+}
+
+.firstpost {
+    border-bottom: 0 !important;
+}
+
+.post > h2, h3{
+    margin: 0;
+}
+
+.post > h2{
+    font-size: 1.5em;
+}
+.post > h3{
+    font-size: 0.75em;
+    color:rgb(64, 64, 64);
+    font-weight: normal;
+}
+.post > p{
+    font-size: 1em;
+}
+
+.post > video{
+    width: 100%;
+}
+
+.post > img{
+    max-width: 100%;
+    max-height: 20em;
+    margin: 0 auto;
+    display: block;
+}
+
+#contactinfo {
+    display: block;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 1em;
+    padding-bottom: 0.1em;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)), url("../image/wei_clientwork_userPFP.jpg");
+    background-color: black;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contactinfo * {
+    color: white;
+}
+
+#footerbox {
+    background-color: black;
+    color: white;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+#footerbox > p {
+    font-size: 0.75em;
+}
+
+.textboxobj{
+    max-width: 30em;
+    margin: 0 auto !important;
+}
+
+@media (max-width: 40em) {
+    .adaptive {
+      flex-direction: column;
+      max-height: none !important;
+    }
+    #nameboxthing{
+        height: 40vh !important;
+    }
+    .textbox{
+        font-size: 1.4em !important;
+    }
+    #boardpic{
+        max-height: 40em;
+        min-height: 15em !important;
+    }
+    .post > h2{
+        font-size: 1.4em !important;
+    }
+    .post > h3{
+        font-size: 0.9em !important;
+    }
+    .post > p{
+        font-size: 0.9em !important;
+    }
+    .adaptivetext{
+        padding: 0 1em 1em 1em !important;
+        min-height: unset;
+    }
+    #nameboxthing > #nameboxtitle > h1 {
+        font-size: 4em !important;
+    }
+    #nameboxtitle {
+        bottom: 0 !important;
+        right: 0 !important;
+        left: unset !important;
+        transform: unset !important;
+    }
+}

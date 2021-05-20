@@ -1,0 +1,155 @@
+.clock_border {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    background: white;
+    box-shadow: inset 0 0 10px gray;
+    border: 14px solid black;
+}
+
+.clock_border::before, .clock_border::after {
+/* hour markers for 12, 6 ,9 , and 3 */
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: black;
+    z-index: 0;
+    left: 50%;
+    margin-left: -5px;
+    top: 0
+}
+
+
+.clock_border::after{
+/* creates the marks for 9 and 3 */
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.clock_border::before, .clock_border::after, .clock_border .hourmark{
+/* creates all other hour markers that don’t exist yet */
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: black;
+    z-index: 0;
+    left: 50%;
+    margin-left: -5px;
+    top: 0
+}
+
+.clock_border .hourmark {
+    background: gray;
+    width: 8px;
+    margin-left: -4px;
+}
+
+.clock_border .hourmark.mark17 {
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.clock_border .hourmark.mark28 {
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.clock_border .hourmark.mark410 {
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+.clock_border .hourmark.mark511 {
+    -moz-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+}
+
+
+
+.inner_Clock_face {
+    position: relative;
+    width:88%;
+    height:88%;
+    background: #FFFFFF;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    Border-radius: 1000px;
+    Z-index: 1000;
+    top: 6%; /* used to center the div horizontally*/
+    left: 6%; /* used to center the div vertically*/ 
+}
+
+.inner_Clock_face::before {/*clock’s center dot*/
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    margin-left: -9px;
+    margin-top: -9px;
+    background: #000000; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 0px 30px #808080;
+}
+
+.inner_Clock_face::after {
+    content: "QUARTZ";
+    position: absolute;
+    width: 100%;
+    font: normal 0.8em Arial;
+    color: #808080;
+    text-align: center;
+    top: 85%;
+    z-index: -2;
+}
+
+.hand, .hand.hour {
+    position: absolute;
+    width: 4px; /* default width of hands/ hour hand */
+    height: 30%; /* default height of hands/ hour hand */
+    top: 20%; /* offset hand vertically by 20% so its bottom is at center of clock */
+    left: 50%; /* offset hand horiz by 50% so its left is at center of clock */
+    margin-left: -2px; /* Account for hand width to center hand horizontally */
+    background: black;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transform-origin: bottom; /* Set transform origin to center bottom */
+    -ms-transform-origin: bottom;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    z-index: -1;
+    -moz-box-shadow: 0 0 3px gray;
+    -webkit-box-shadow: 0 0 3px gray;
+    box-shadow: 0 0 3px gray;
+}
+
+.hand.minute { /* minute hand (2nd longest) */
+    height: 45%;
+    top: 5%;
+    width: 6px;
+    margin-left: -3px;
+}
+
+.hand.second { /* second hand (longest) */
+    height: 50%;
+    width: 2px;
+    margin-left: -1px;
+    top: 0;
+    background: red;
+}

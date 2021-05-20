@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro','Tahoma',sans-serif;
+    background-color: #646464;
+}
+
+.serif {
+    font-family: 'Source Serif Pro','Times New Roman',serif;
+}
+
+.bolder{
+    font-weight: 700;
+}
+
+#navbar {
+    z-index: 1;
+    position: fixed;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 1em;
+    width: 100%;
+    backdrop-filter: blur(15px); /* magic blurred background thing */
+    -webkit-backdrop-filter: blur(15px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
+}
+
+@keyframes turnred {
+    from {color: white;}
+    to {color: rgb(255, 70, 70);}
+  }
+
+.red{
+    color: rgb(255, 70, 70);
+    animation-name: turnred;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+
+#navbar > h1 {
+    margin: 0;
+    color: rgb(255, 70, 70);
+    font-weight: bold;
+}
+
+#namecontainer{
+    display: block;
+}
+
+#nameboxthing{
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../image/tim1.jpg);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+@keyframes fadein {
+    from {color: rgba(255,255,255,0);}
+    to {color: rgba(255,255,255,0.5);}
+}
+
+@keyframes bounce {
+    from {bottom: 2em;}
+    to {bottom: 2.2em;}
+}
+
+#scrolltext{
+    color: rgba(255,255,255,0);
+    position: absolute;
+    bottom: 2em;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    animation: fadein 1.5s ease 2s 1 forwards, bounce 1s ease-in-out 3s infinite alternate;
+}
+
+@keyframes fadedown {
+    from {padding-top: 40vh; opacity: 0;}
+    to {padding-top: 45vh; opacity: 1;}
+}
+
+#name{
+    color: #ffffff;
+    font-size: 500%;
+    text-align: center;
+    font-weight: lighter;
+    opacity: 0;
+    animation: fadedown 1.5s ease-in-out 0.1s 1 forwards;
+}
+
+#whatami{
+    background-color: black;
+    width: 100;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#whatami > h2 {
+    flex-grow: 1;
+    min-width: 5em;
+    font-size: 300%;
+    font-weight: bolder;
+    color: white;
+    margin: 0.5em
+}
+
+#whatflex{
+    flex-grow: 1;
+}
+
+.whatbox{
+    float:left;
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    font-weight: lighter;
+    padding: 1em 0;
+    flex-grow: 1;
+}
+
+.what1{
+    background-color: rgba(255, 70, 70, 0.2);
+}
+
+.what2{
+    background-color: rgba(255, 70, 70, 0.4);
+}
+
+.what3{
+    background-color: rgba(255, 70, 70, 0.6); 
+}
+
+.what4{
+    background-color: rgba(255, 70, 70, 0.8); 
+}
+
+.what5{
+    background-color: rgba(255, 70, 70, 1);
+}
+
+.imggal{
+    width: 100%;
+    display: block;
+}
+
+.imgcapt{
+    position: absolute;
+    color: rgb(255, 70, 70);
+    font-size: 200%;
+    font-weight: normal;
+    line-height: 1.5;
+    bottom: 0;
+    padding: 1.75em 0.75em;
+    text-align: right;
+    right: 0;
+}
+.imgcapt2{
+    position: absolute;
+    color:rgba(255,255,255,0.5);
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1.5;
+    bottom: 0;
+    padding: 1em 1.5em;
+    text-align: right;
+    right: 0;
+}
+
+.imgcaptbg{
+    position: absolute;
+    width:100%;
+    height: 20em;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9));
+    bottom: 0;
+}
+
+.image{
+    width: 100%;
+    display:block;
+}
+
+.imgcontain{
+    position: relative;
+}
+
+.colorrow{
+    display:flex;
+}
+
+.colorrow > h2{
+    flex-grow: 1;
+    text-align: center;
+    padding: 2em;
+    margin: 0;
+    width: 5em;
+}
+
+#blk{
+    color: white;
+    background-color: black;
+}
+
+#gry{
+    background-color: #646464;
+    color: white;
+}
+
+#wht{
+    background-color: white;
+    color: black;
+}
+
+#rd{
+    background-color: #FF4646;
+    color: white;
+}
+
+#support {
+    display: block;
+}
+
+#support > h2{
+    font-weight: bolder;
+    font-size: 250%;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    background-color: #646464;
+    margin: 0;
+}
+
+#langflex{
+    display: flex;
+}
+
+.lang{
+    text-align: center;
+    padding: 2em;
+    flex-grow: 1;
+    font-size: 200%;
+    font-weight: lighter;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.htmlimg{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../image/html.png);
+}
+
+.cssimg{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../image/css.png);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 1em 1em 0.5em 1em;
+}
+
+a{
+    color: white;
+}

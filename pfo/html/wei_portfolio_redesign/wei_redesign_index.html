@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			wei_Wikipedia, the free encyclopedia
+		</title>
+		<link rel="stylesheet" type="text/css" href="CSS/wei_redesign.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> <!--Loads Roboto font from Google Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab"> <!--Loads Roboto Slab font from Google Fonts-->
+	</head>
+	<body onload="linkwarning()"> <!--JS thing that shows popup when loading page to show an important warning-->
+		<script>
+			function linkwarning() {
+  				alert("Links that are underlined even when the cursor is not hovering over them will lead to recreated pages.");
+			}
+		</script>
+		<div id="header">
+			<nav id="headMenu">
+				<ul id="menuList">
+					<li id="menuLoginInfo">Not logged in</li> <!--User logo is in CSS-->
+					<li class="menuButton">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [alt-shift-n]" accesskey="n">Talk</a>
+					</li>
+					<li class="menuButton">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [alt-shift-y]" accesskey="y">Contributions</a>
+					</li>
+					<li class="menuButton">
+						<a target="_blank" href="https://en.wikipedia.org/w/index.php?=title=Special:CreateAccount&returnto=Main+Page" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a>
+					</li>
+					<li class="menuButton">
+						<a target="_blank" class="underline" href="html/login.html" title="You're encouraged to log in; however, it's not mandatory. [alt-shift-o]" accesskey="o">Log in</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="leftnav">
+				<nav class="pageType">
+					<li id="readType" class="typeButton selected"> <!--Selected and Deselected classes control button color-->
+						<a href="https://en.wikipedia.org/wiki/Main_Page" title="View the content page [alt-shift-c]" accesskey="c">Main Page</a>
+					</li>
+					<li id="sourceType" class="typeButton deselected">
+						<a href="https://en.wikipedia.org/wiki/Talk:Main_Page" title="Discuss improvements to the content page [alt-shift-t]" accesskey="t">Talk</a>
+					</li>
+					<li id="sourceType" class="typeButton deselected">
+						<a href="https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit" title="This page is protected.
+						You can view its source [alt-shift-e]" accesskey="e">View source</a>
+					</li>
+					<li id="historyType" class="typeButton deselected">
+						<a href="https://en.wikipedia.org/w/index.php?title=Main_Page&action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a>
+					</li>
+				</nav>
+			</div>
+			<div id="rightnav">
+				<select id="lang" onchange="window.open(this.value);"> <!--This thing took me like 1 hour to populate and it's just a dropdown list with some random JS that switches your page to whatever you selected smh-->
+					<option value="wei_redesign_index.html">English</option>
+					<option value="https://simple.wikipedia.org/wiki/">Simple English</option>
+					<option value="https://ar.wikipedia.org/wiki/">العربية<</option>
+					<option value="https://bg.wikipedia.org/wiki/">Български</option>
+					<option value="https://bs.wikipedia.org/wiki/">Bosanski</option>
+					<option value="https://ca.wikipedia.org/wiki/">Català</option>
+					<option value="https://cs.wikipedia.org/wiki/">Čeština</option>
+					<option value="https://da.wikipedia.org/wiki/">Dansk</option>
+					<option value="https://de.wikipedia.org/wiki/">Deutsch</option>
+					<option value="https://et.wikipedia.org/wiki/">Eesti</option>
+					<option value="https://el.wikipedia.org/wiki/">Ελληνικά</option>
+					<option value="https://es.wikipedia.org/wiki/">Español</option>
+					<option value="https://eo.wikipedia.org/wiki/">Esperanto</option>
+					<option value="https://eu.wikipedia.org/wiki/">Euskara</option>
+					<option value="https://fa.wikipedia.org/wiki/">فارسی</option>
+					<option value="https://fr.wikipedia.org/wiki/">Français</option>
+					<option value="https://gl.wikipedia.org/wiki/">Galego</option>
+					<option value="https://ko.wikipedia.org/wiki/">한국어</option>
+					<option value="https://hr.wikipedia.org/wiki/">Hrvatski</option>
+					<option value="https://id.wikipedia.org/wiki/">Bahasa Indonesia</option>
+					<option value="https://it.wikipedia.org/wiki/">Italiano</option>
+					<option value="https://he.wikipedia.org/wiki/">עברית</option>
+					<option value="https://ka.wikipedia.org/wiki/">ქართული</option>
+					<option value="https://lv.wikipedia.org/wiki/">Latviešu</option>
+					<option value="https://lt.wikipedia.org/wiki/">Lietuvių</option>
+					<option value="https://hu.wikipedia.org/wiki/">Magyar</option>
+					<option value="https://mk.wikipedia.org/wiki/">Македонски</option>
+					<option value="https://ms.wikipedia.org/wiki/">Bahasa Melayu</option>
+					<option value="https://nl.wikipedia.org/wiki/">Nederlands</option>
+					<option value="https://ja.wikipedia.org/wiki/">日本語</option>
+					<option value="https://no.wikipedia.org/wiki/">Norsk bokmål</option>
+					<option value="https://nn.wikipedia.org/wiki/">Norsk nynorsk</option>
+					<option value="https://pl.wikipedia.org/wiki/">Polski</option>
+					<option value="https://pt.wikipedia.org/wiki/">Português</option>
+					<option value="https://ro.wikipedia.org/wiki/">Română</option>
+					<option value="https://ru.wikipedia.org/wiki/">Русский</option>
+					<option value="https://sk.wikipedia.org/wiki/">Slovenčina</option>
+					<option value="https://sl.wikipedia.org/wiki/">Slovenščina</option>
+					<option value="https://sr.wikipedia.org/wiki/">Српски / srpski</option>
+					<option value="https://sh.wikipedia.org/wiki/">Srpskohrvatski / српскохрватски</option>
+					<option value="https://fi.wikipedia.org/wiki/">Suomi</option>
+					<option value="https://sv.wikipedia.org/wiki/">Svenska</option>
+					<option value="https://th.wikipedia.org/wiki/">ไทย</option>
+					<option value="https://tr.wikipedia.org/wiki/">Türkçe</option>
+					<option value="https://uk.wikipedia.org/wiki/">Українська</option>
+					<option value="https://vi.wikipedia.org/wiki/">Tiếng Việt</option>
+					<option value="https://zh.wikipedia.org/wiki/">中文</option>
+				</select>
+				<div id="search">
+					<input placeholder="Search Wikipedia" title="Search Wikipedia [alt-shift-f]" accesskey="f" id="searchInput">
+					<input title="Go to a page with this exact name if it exists" id="searchButton">
+				</div>
+			</div>
+		</div>
+		<div id="panel">
+			<div id="logo">
+					<a target="_blank" title="Visit the main page" id="logo-link" href="wei_redesign_index.html"> <!--Logo img is in CSS-->
+						<h1 id="titleh1">Wikipedia</h1>
+						<h2 id="titleh2">the free encyclopedia</h2>
+					</a>
+			</div>
+		</div>
+		<div id="foreheadlol"></div> <!--Just the gray bar on top acting as a sort of fancy padding thing that the logo and the search bar and stuff sits on top of-->
+		<div id="main">
+			<div class="topbanner donate">
+				<h1><b><i>PLEASE DONATE TO US</i></b></h1>
+				<p>we are a nonprofit organization running off of cheap ramen and the $100 that Google sends to us monthly so they can say that they support nonprofit organizations please help my computer is like 15 years old and I know you're using our site to cheat on your English essay that you didn't read the book for because I can see you and I think you should probably put on a shirt because going around shirtless is kinda weird even if you're inside your house</p>
+				<button onclick="window.open('https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=US&uselang=en&utm_medium=sidebar&utm_source=donate&utm_campaign=C13_en.wikipedia.org')" id="donate-button"><b>Donate Now</b></button>
+			</div>
+			<div class="topbanner">
+				<div id="top-welcomesegment"> <!--the welcome bar-->
+					<div id="top-welcome">
+						Welcome to <a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia" title="Wikipedia">Wikipedia</a>,
+					</div>
+					<div id="top-welcome2">
+						the <a target="_blank" href="https://en.wikipedia.org/wiki/Free_content" title="Free content">free</a> <a target="_blank" href="https://en.wikipedia.org/wiki/Encyclopedia" title="Encyclopedia">encyclopedia</a> that <a target="_blank" href="https://en.wikipedia.org/wiki/Help:Introduction_to_Wikipedia" title="Help:Introduction to Wikipedia">anyone can edit</a>.
+					</div>
+					<div id="top-welcome3">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Special:Statistics" title="Special:Statistics">6,191,785</a> articles in <a target="_blank" href="https://en.wikipedia.org/wiki/English_language" title="English language">English</a>
+					</div>
+				</div>
+				<ul id="top-portals"> <!--Used CSS to split into rows and columns when instead I could've just used 3 UL lists SMH-->
+					<li>
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Portal:The_arts" title="Portal:The arts">The arts</a>
+					</li>
+					<li class="top-row2">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Portal:Biography" title="Portal:Biography">Biography</a>
+					</li>
+					<li class="top-row3">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Portal:Geography" title="Portal:Geography">Geography</a>
+					</li>
+					<li class="top-column2">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Portal:History" title="Portal:History">History</a>
+					</li>
+					<li class="top-column2 top-row2">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Portal:Mathematics" title="Portal:Mathematics">Mathematics</a>
+					</li>
+					<li class="top-column2 top-row3">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Portal:Science" title="Portal:Science">Science</a>
+					</li>
+					<li class="top-column3">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Portal:Society" title="Portal:Society">Society</a>
+					</li>
+					<li class="top-column3 top-row2">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Portal:Technology" title="Portal:Technology">Technology</a>
+					</li>
+					<li class="top-column3 top-row3">
+						<a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Contents/Portals" title="Wikipedia:Contents/Portals">All portals</a>
+					</li>
+				</ul>
+			</div>
+			<table id="mainbody"> <!--Table used to create 2 columns because I don't know a better way of doing it-->
+				<tbody>
+					<td id="mainbody-left">
+						<div class="main-table-content">
+							<h2 class="mainbody-title main-left-title-h2">
+							From today's featured article
+							</h2>
+							<div id="main-featured-img" style="width: 200px;"> <!--inline style because making seperate CSS entries for each image width becomes very cumbersome, and doing this allows for easy switching of images without having to dig into the CSS and change values-->
+								<a target="_blank" href="Images/DSCN3800web.jpg" title="A Falling Galaxy S10e">
+									<img alt="A Picture Of A Falling Galaxy S10e" src="Images/DSCN3800web.jpg" width="200px">
+								</a>
+								<div class="main-featured-img-capt">
+									A Galaxy S10e falling in front of a window for some reason idk
+								</div>
+							</div>
+							The <a target="_blank" href="html/s10.html" class="recreate" style="text-decoration: underline;"><b>Samsung Galaxy S10</b></a> series of smartphones are a lineup of cellular devices developed by Samsung Electronics, and is the 10th iteration of devices in their S series of smartphones powered by the Android operating system. Unveiled in 2019, the devices in the series share common specifications such as an Exynos 9820 system-on-chip (with the US models being equipped with a superior Snapdragon 855 that is more power efficient and more capable), a hole-punch style front-facing camera, and an HDR10+ compatible display so you can watch like 5 YouTube videos that have HDR and also pay extra for Netflix UHD just to get HDR. They are the last iteration of S-series devices to retain a 3.5mm headphone jack (later, it was revealed that The Committee For Bluetooth Device Adoption bribed all major smartphone companies to drop the headphone jack so consumers would buy more Bluetooth headsets). All devices run One UI, a software overlay developed for Android by Samsung Electronics for Samsung Galaxy devices. They are notorious for slower Android upgrades compared to other smartphone manufacturers such as Google, although security updates are usually distributed a few days following the start of each month. The entire S10 series comes preinstalled with Facebook and Microsoft Office Mobile (which you can't even access because it's a hidden system app) because everyone uses Facebook and MS Office and there totally wasn't a monetary incentive behind their inclusion. (<a target="_blank" href="html/s10.html">Full article...</a>)
+							<div class="section-footer right">
+								Recently featured: <a target="_blank" href="https://en.wikipedia.org/wiki/Hurricane_Lane_(2018)">Hurricane Lane (2018)</a> <b>·</b> <a target="_blank" href="https://www.youtube.com/watch?v=7hF41qPkJxs">Chef Steven Weber</a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/Tim_Heidecker">Tim Heidecker</a>
+								<br>
+								<b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Today%27s_featured_article/December_2020">Archive</a> · <a target="_blank" href="https://lists.wikimedia.org/mailman/listinfo/daily-article-l">By email</a> · <a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Featured_articles">More featured articles</a></b>
+							</div>
+							<h2 class="mainbody-title main-left-title-h2">
+								Did you know ...
+							</h2>
+							<div class="right-float-img" style="height: 125px;"> <!--inline CSS to make it easier to switch out images of differing aspect ratios and so you can manually configure the size-->
+								<a target="_blank" href="Images/realisticcashewapple.jpg" class="image" title="Cashew apples">
+									<img alt="Cashew apples" src="Images/realisticcashewapple.jpg" height="125">
+								</a>
+							</div>
+							<ul>
+								<li>... that <a target="_blank" href="html/cashew.html" class="underline">cashews</a> <i>(pictured)</i> come from a <b><a target="_blank" href="https://en.wikipedia.org/wiki/Fruit">fruit</a>?</b></li>
+								<li>... that the <b><a target="_blank" href="https://en.wikipedia.org/wiki/Sky">sky</a></b> is <a target="_blank" href="https://en.wikipedia.org/wiki/Blue">blue?</a></li>
+								<li>... that things <b><a target="_blank" href="https://en.wikipedia.org/wiki/Free_fall">fall</a></b> when they are dropped due to gravity?</li>
+								<li>... that plants <a target="_blank" href="https://en.wikipedia.org/wiki/Photosynthesis">breathe in <b>carbon dioxide?</b></a></li>
+								<li>... that <b><a target="_blank" href="https://en.wikipedia.org/wiki/Hewlett-Packard">Hewlett-Packard</a></b> as a company is <b>going down the drain</b> and all their <a target="_blank" href="https://en.wikipedia.org/wiki/Consumer">consumer-level</a> devices have very poor <a target="_blank" href="https://en.wikipedia.org/wiki/Software">software support</a> compared to their <a target="_blank" href="https://en.wikipedia.org/wiki/Business">enterprise</a> devices despite some of their <a target="_blank" href="https://en.wikipedia.org/wiki/Consumer">consumer products</a> having a similar pricing to <a target="_blank" href="https://en.wikipedia.org/wiki/Business">enterprise</a> products <b>costing upwards of $1,000 USD</b> (screw you HP I don't want <b><a target="_blank" href="https://en.wikipedia.org/wiki/McAfee">McAfee SecureSafe Pro Antivirus 2025</a></b> and <b>Cool HP Games 2-hour Trial</b> on my laptop go away you're not helping anyone with that stuff except old technologically illiterate people who don't understand that those are why their computer is so slow and aren't good things that you included out of the goodness of your heart)?
+								<li>... that this is a <b><a target="_blank" href="https://en.wikipedia.org/wiki/Text">line of text?</a></b></li>
+								<li>... that <b><a target="_blank" href="https://en.wikipedia.org/wiki/Confusion">I don't know</a></b> what I am doing?</li>
+								<li>... that <b>you are <a target="_blank" href="https://en.wikipedia.org/wiki/Reading">reading</a></b> this text for some reason?</li>
+								<li>... that apparently <a target="_blank" href="https://en.wikipedia.org/wiki/Leonardo_DiCaprio">Leonardo DiCaprio</a> actually <b>set people on <a target="_blank" href="https://en.wikipedia.org/wiki/Arson">fire</a></b> while filming <a target="_blank" href="https://en.wikipedia.org/wiki/Once_Upon_a_Time_in_Hollywood">Once Upon A Time In Hollywood</a><b> which I haven't seen yet?</b></li>
+							</ul>
+							<div class="section-footer right">
+								<b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Recent_additions">Archive</a> · <a target="_blank" href="https://en.wikipedia.org/wiki/Help:Your_first_article">Start a new article</a> · <a target="_blank" href="https://en.wikipedia.org/wiki/Template_talk:Did_you_know">Nominate an article</a></b>
+							</div>
+						</div>
+					</td>
+					<td id="mainbody-border"> <!--tiny black column serving as a border between the 2 other columns-->
+					</td>
+					<td id="mainbody-right">
+						<div class="main-table-content">
+							<h2 class="mainbody-title main-right-title-h2">
+								In the news
+							</h2>
+							<div id="covid-news">
+								<dl>
+									<dt>
+										<a target="_blank" href="https://en.wikipedia.org/wiki/COVID-19_pandemic" title="COVID-19 pandemic">COVID-19 pandemic</a>:
+									</dt>
+									<dd>
+										<a target="_blank" href="https://en.wikipedia.org/wiki/Coronavirus_disease_2019" title="Coronavirus disease 2019">Disease</a><b> · </b>
+									</dd>
+									<dd>
+										<a target="_blank" href="https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2" title="Severe acute respiratory syndrome coronavirus 2">Virus</a><b> · </b>
+									</dd>
+									<dd>
+										<a target="_blank" href="https://en.wikipedia.org/wiki/COVID-19_pandemic_by_country_and_territory" title="COVID-19 pandemic by country and territory"><span class="nowrap">By location</span></a><b> · </b>
+									</dd>
+									<dd>
+										<a target="_blank" href="https://en.wikipedia.org/wiki/Impact_of_the_COVID-19_pandemic" title="Impact of the COVID-19 pandemic">Impact</a><b> · </b>
+									</dd>
+									<dd>
+										<a target="_blank" href="https://en.wikipedia.org/wiki/Portal:Coronavirus_disease_2019" title="Portal:Coronavirus disease 2019">Portal</a>
+									</dd>
+								</dl>
+							</div>
+							<div class="right-float-img" style="width:100px;"> <!--inline css to make it easier to switch images and modify width accordingly-->
+								<a target="_blank" href="Images/yojiselfportrait.gif" class="image" title="A Self Portrait Of Yoji Kuranaraharanada">
+									<img alt="A Self Portrait Of Yoji Kuranaraharanada" src="Images/yojiselfportrait.gif" width="100px">
+								</a>
+								<div class="main-featured-img-capt">
+									 Yoji Kuranaraharanada (self portrait, 2001)
+								</div>
+							</div>
+							<ul>
+								<li>Japanese mangaka <a target="_blank" href="html/yoji.html" style="text-decoration: underline;"><b>Yoji Kuranaraharanada</b></a> <i>(pictured)</i> has died at the age of 231 due to a <a target="_blank" href="https://en.wikipedia.org/wiki/Heart_attack">heart attack</a></li>
+								<li>African American rapper <b><a target="_blank" href="https://en.wikipedia.org/wiki/Kanye_West">Kanye West</a></b> has been elected as the <a target="_blank" href="https://en.wikipedia.org/wiki/President_of_the_United_States">98th president of the United States of America</a></li>
+								<li>Artist <b><a target="_blank" href="https://en.wikipedia.org/wiki/Thom_Yorke">Thom Yorke</a></b> from the band <a target="_blank" href="https://en.wikipedia.org/wiki/Radiohead">Thom Yorke And The Radio Heads</a> has been arrested by the <a target="_blank" href="https://en.wikipedia.org/wiki/British_Government">British government</a> after posting "the government is bad" on social media service <a target="_blank" href="https://en.wikipedia.org/wiki/Twitter">Twitter</a></li>
+								<li>Business magnate <a target="_blank" href="https://en.wikipedia.org/wiki/Elon_Musk"><b>Elon Musk</b></a> announces that he has perfected a special procedure for producing <a target="_blank" href="https://en.wikipedia.org/wiki/Genetically_modified_animal">genetically modified</a> feline/human hybrids (mainly females). Volunteer testing has been launched.</li>
+							</ul>
+							<div class="section-footer">
+								<b><a target="_blank" href="https://en.wikipedia.org/wiki/Portal:Current_events">Ongoing</a></b>: <a target="_blank" href="https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict">Nagorno-Karabakh conflict</a>
+								<br>
+								<b><a target="_blank" href="https://en.wikipedia.org/wiki/Deaths_in_2020">Recent deaths</a></b>: <a target="_blank" href="https://en.wikipedia.org/wiki/Sid_Hartman">Sid Hartman</a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/James_A._Johnson_(businessman)">James A. Johnson</a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/Johnny_Bush">Johnny Bush</a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/Tom_Maschler">Tom Maschler</a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/Ed_Benguiat">Ed Benguiat</a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/Bhanu_Athaiya">Bhanu Athaiya</a>
+							</div>
+							<div class="section-footer right">
+								<a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:In_the_news/Candidates"><b>Nominate an article</b></a>
+							</div>
+							<h2 class="mainbody-title main-right-title-h2">
+								On this day
+							</h2>
+							<b><a target="_blank" href="https://en.wikipedia.org/wiki/November_10">November 10</a></b>: <b><a target="_blank" href="https://en.wikipedia.org/wiki/Noor_Hossain">Noor Hossain Day</a></b> in Bangladesh (1987)
+							<ul>
+								<li><a target="_blank" href="https://en.wikipedia.org/wiki/1202">1202</a> – Some <a target="_blank" href="https://en.wikipedia.org/wiki/Fourth_Crusade">Fourth Crusade thing </a> happened and also a <b><a target="_blank" href="https://en.wikipedia.org/wiki/Siege_of_Zara">Siege of Zara</a></b> in <a target="_blank" href="https://en.wikipedia.org/wiki/Zadar">Zadar</a>, Croatia where a Catholic city that got invaded by Catholic <a target="_blank" href="https://en.wikipedia.org/wiki/Crusades">crusaders</a> which makes no sense at all like why would they invade their own city</li>
+								
+								<li><a target="_blank" href="https://en.wikipedia.org/wiki/1940">1940</a> – A 7.7 <a target="_blank" href="https://en.wikipedia.org/wiki/Moment_magnitude_scale">Mw</a> <b><a target="_blank" href="https://en.wikipedia.org/wiki/1940_Vrancea_earthquake">earthquake</a></b> happened in <a target="_blank" href="https://en.wikipedia.org/wiki/Vrancea_County">Vrancea</a> in some part of Romania somewhere.</li>
+								
+								<li><a target="_blank" href="https://en.wikipedia.org/wiki/1945">1945</a> – Something about some <a target="_blank" href="https://en.wikipedia.org/wiki/Indonesian_National_Revolution">Indonesian National Revolution</a> and an <b><a target="_blank" href="https://en.wikipedia.org/wiki/Battle_of_Surabaya">attack on </a></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Surabaya">Surabaya</a>.</li>
+								
+								<li><a target="_blank" href="https://en.wikipedia.org/wiki/2007">2007</a> – At the <a target="_blank" href="https://en.wikipedia.org/wiki/Ibero-American_Summit">Ibero-American Summit</a> in <a target="_blank" href="https://en.wikipedia.org/wiki/Santiago">Santiago</a>, Chile, <a target="_blank" href="https://en.wikipedia.org/wiki/Juan_Carlos_I">King Juan Carlos I of Spain</a> told president <a target="_blank" href="https://en.wikipedia.org/wiki/Hugo_Ch%C3%A1vez">Hugo Chávez of Venezuela to <b><a target="_blank" href="https://en.wikipedia.org/wiki/%C2%BFPor_qu%C3%A9_no_te_callas%3F">shut the heck up</a></b> because he kept rudely interrupting prime minister <a target="_blank" href="https://en.wikipedia.org/wiki/Jos%C3%A9_Luis_Rodr%C3%ADguez_Zapatero">José Luis Rodríguez Zapatero</a>. Kids, if you interrupt people when they are talking you are a bad person and everyone will hate you when you grow up because you are extremely inconsiderate to the person talking but it is okay if the person talking is a horrible person in which case interrupting them is perfectly fine and people will thank you for cutting whatever it is they are saying short.</li>
+							</ul>
+							<div class="section-footer">
+								<a target="_blank" href="https://en.wikipedia.org/wiki/Gu%C3%B0r%C3%B8%C3%B0r_%C3%93l%C3%A1fsson"><b>Guðrøðr Óláfsson</b></a> (d. 1187) <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/Louis_Lingg"><b>Louis Lingg</b></a> (d. 1887) <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/Neil_Gaiman"><b>Neil Gaiman</b></a> (b. 1960)
+							</div>
+							<div class="section-footer">
+								More anniversaries: <a target="_blank" href="https://en.wikipedia.org/wiki/November_9">November 9</a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/November_10"><b>November 10</b></a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/November_11">November 11</a>
+							</div>
+							<div class="section-footer right">
+								<b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Selected_anniversaries/November">Archive</a> · <a target="_blank" href="https://lists.wikimedia.org/mailman/listinfo/daily-article-l">By email</a> · <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_days_of_the_year">List of days of the year</a></b>
+							</div>
+						</div>
+					</td>
+				</tbody>
+			</table>
+			<div class="main-content"> <!--reusing main-content class because I don't want to code another one to create a similar box-->
+				<h2 class="mainbody-title main-feat-img-title">
+				Today's featured picture
+				</h2>
+				<table> <!--table used to make two columns because this is the easy way and there's probably a hard way that I don't want to figure out-->
+					<tbody  class="feat-img-box">
+						<tr>
+							<td class="feat-image" style="width: 300px"> <!--inline css to facilitate easy replacement of images and necessary width modifications-->
+								<a target="_blank" href="Images/allen.jpg" title="An unknown person Photoshopping themselves with an anime character">
+								<img src="Images/allen.jpg" alt="An unknown person Photoshopping themselves with an anime character" width="300">
+								<!--picture of a kid named allen reading some fanfic at school, he really likes anime though and his facebook PFP is a crying anime girl so I had this really great idea (which isn't that great now that I reflect on it) to make it look like he's photoshopping a picture of himself next to the crying anime girl which is actually another piece of art from Paris Lun that I used with verbal permission-->
+								</a>
+							</td>
+							<td class="feat-image-desc">
+								<b>Timothy Wei</b> is some kid from the United States who clearly has nothing better to do than take random photos of people on his phone and edit them. The picture on the left is titled <i>A Student Photoshops A Photo Of Himself With An Anime Character</i> (2020). It supposedly makes a statement about how Japanese anime is being fetishized in the United States, but is incredibly ironic due to the author also holding anime at a concerningly high regard.
+								<div class="section-footer right">
+									Recently featured: <a target="_blank" href="https://en.wikipedia.org/wiki/Template:POTD/2021-01-18"><i>Sympetrum danae</i></a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/Template:POTD/2021-01-17"><i>Stitching the Standard</i></a> <b>·</b> <a target="_blank" href="https://en.wikipedia.org/wiki/Template:POTD/2021-01-16">Danzig gulden</a>
+									<br>
+									<b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Picture_of_the_day/Archive">Archive</a> · <a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Featured_pictures">More featured pictures</a></b>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="main-content">
+				<h2 class="mainbody-title main-other-title">
+				Other areas of Wikipedia
+				</h2>
+				<ul id="other-areas">
+					<li><b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="Wikipedia:Community portal">Community portal</a></b> – Bulletin board, projects, resources and activities covering a wide range of Wikipedia areas.</li>
+					<li><b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Help_desk" title="Wikipedia:Help desk">Help desk</a></b> – Ask questions about using Wikipedia.</li>
+					<li><b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Local_Embassy" title="Wikipedia:Local embassy">Local embassy</a></b> – For Wikipedia-related communication in languages other than English.</li>
+					<li><b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Reference_desk" title="Wikipedia:Reference desk">Reference desk</a></b> – Serving as virtual librarians, Wikipedia volunteers tackle your questions on a wide range of subjects.</li>
+					<li><b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:News" title="Wikipedia:Site news">Site news</a></b> – Announcements, updates, articles and press releases on Wikipedia and the Wikimedia Foundation.</li>
+					<li><b><a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Village_pump" title="Wikipedia:Village pump">Village pump</a></b> – For discussions about Wikipedia itself, including areas for technical issues and policies.</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			<p id="footer-copyright">
+				Designed by Timothy Wei (tombunyon@live.com). Last updated 1/19/2021.
+			</p>
+			<ul id="footer-links">
+				<li id="f-priv" class="menuButton">
+					<a target="_blank" href="https://foundation.wikimedia.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a>
+				</li>
+				<li id="f-about" class="menuButton">
+					<a target="_blank" href="https://en.wikipedia.org//wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a>
+				</li>
+				<li id="f-discl" class="menuButton">
+					<a target="_blank" href="https://en.wikipedia.org//wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a>
+				</li>
+				<li id="f-cont" class="menuButton">
+					<a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a>
+				</li>
+				<li id="f-mobile" class="menuButton">
+					<a target="_blank" href="https://en.m.wikipedia.org/w/index.php?title=Main_Page&amp;mobileaction=toggle_view_mobile">Mobile view</a>
+				</li>
+				<li id="f-dev" class="menuButton">
+					<a target="_blank" href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a>
+				</li>
+				<li id="f-stats" class="menuButton">
+					<a target="_blank" href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a>
+				</li>
+				<li id="f-cookie" class="menuButton">
+					<a target="_blank" href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
+<!-- 
+
+Bibliography
+
+001. "How do I auto-resize an image to fit a 'div' container?" Stack Overflow, 12 Jun. 2010, stackoverflow.com/q/3029422
+
+"CSS Box Sizing." W3Schools, www.w3schools.com/css/css3_box-sizing.asp.
+
+"CSS Layout - float and clear." W3Schools, www.w3schools.com/css/css_float.asp.
+
+"CSS Layout - Horizontal & Vertical Align." W3Schools, www.w3schools.com/csS/css_align.asp.
+
+"CSS Layout - The position Property." W3Schools, www.w3schools.com/css/css_positioning.asp.
+
+"CSS list-style property." W3Schools, www.w3schools.com/cssref/pr_list-style.asp.
+
+"CSS Styling Lists." W3Schools, www.w3schools.com/css/css_list.asp.
+
+"CSS Table Style." W3Schools, www.w3schools.com/css/css_table_style.asp.
+
+"CSS Units." W3Schools, www.w3schools.com/cssref/css_units.asp.
+
+“Hajime Isayama.” Wikipedia, Wikimedia Foundation, 15 Jan. 2021, en.wikipedia.org/wiki/Hajime_Isayama.
+
+"HTML button tag." W3Schools, www.w3schools.com/tags/tag_button.asp.
+
+“HTML Links.” W3Schools, www.w3schools.com/html/html_links.asp.
+
+“HTML nav Tag.” W3Schools, www.w3schools.com/tags/tag_nav.asp.
+
+“HTML select Tag.” W3Schools, www.w3schools.com/tags/tag_select.asp.
+
+"HTML Tables." W3Schools, www.w3schools.com/html/html_tables.asp.
+
+"JavaScript Popup Boxes." W3Schools, www.w3schools.com/js/js_popup.asp.
+
+“Main Page.” Wikipedia, Wikimedia Foundation, 10 Nov. 2020, en.wikipedia.org/wiki/Main_Page.
+
+oceanic815. "HTML: select menu as navigation menu." Stack Overflow, 5 Jul. 2014, stackoverflow.com/q/24582056
+
+Robertson, Christian. "Roboto." Google Fonts, Google, fonts.google.com/specimen/Roboto.
+
+Robertson, Christian. "Roboto Slab." Google Fonts, Google, fonts.google.com/specimen/Roboto+Slab.
+
+Rodricks, Robin. "How to make Javascript execute after page load?" Stack Overflow, 20 Apr. 2009, stackoverflow.com/q/807878
+
+“Samsung Galaxy S10.” Wikipedia, Wikimedia Foundation, 14 Jan. 2021, en.wikipedia.org/wiki/Samsung_Galaxy_S10.
+
+Wei, Timothy. A Galaxy S10e falling in front of a window for some reason idk. 15 Jan. 2021. Shot using a Nikon Coolpix P7700 and edited in Adobe Photoshop CC 2017.
+
+Wei, Timothy. A Self Portrait Of Yoji Kuranaraharanada. 15 Jan. 2021. Created in Microsoft Paint.
+
+Wei, Timothy and Paris Lun. A Student Photoshops A Photo Of Himself With An Anime Character. 19 Jan. 2021. Shot using a Samsung Galaxy S10e and edited in Adobe Photoshop CC 2017.
+
+Wei, Timothy. Cashew apples. 15 Jan. 2021. Created in Adobe Photoshop CC 2017.
+
+-->

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			wei_Wikipedia, the free encyclopedia
+		</title>
+		<link rel="stylesheet" type="text/css" href="CSS/wei_recreate.css">
+	</head>
+	<body>
+		<div id="header">
+			<nav id="headMenu">
+				<ul id="menuList">
+					<li id="menuLoginInfo">Not logged in</li>
+					<li class="menuButton">
+						<a href="https://en.wikipedia.org/wiki/Special:MyTalk">Talk</a>
+					</li>
+					<li class="menuButton">
+						<a href="https://en.wikipedia.org/wiki/Special:MyContributions">Contributions</a>
+					</li>
+					<li class="menuButton">
+						<a href="https://en.wikipedia.org/w/index.php?=title=Special:CreateAccount&returnto=Main+Page">Create account</a>
+					</li>
+					<li class="menuButton">
+						<a href="https://en.wikipedia.org/w/index.php?=title=Special:UserLogin&returnto=Main+Page">Log in</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="leftnav">
+				<nav class="pageType">
+					<li id="mainType" class="typeButton selected">
+						<a href="https://en.wikipedia.org/wiki/Main_Page" title="View the content page [alt-shift-c]" accesskey="c">Main Page</a>
+					</li>
+					<li id="talkType" class="typeButton deselected">
+						<a href="https://en.wikipedia.org/wiki/Talk:Main_Page" title="Discuss improvements to the content page [alt-shift-t]" accesskey="t">Talk</a>
+					</li>
+				</nav>
+			</div>
+			<div id="rightnav">
+				<nav class="pageType">
+					<li id="readType" class="typeButton selected">
+						<a href="https://en.wikipedia.org/wiki/Main_Page">Read</a>
+					</li>
+					<li id="sourceType" class="typeButton deselected">
+						<a href="https://en.wikipedia.org/w/index.php?title=Main_Page&amp;action=edit" title="This page is protected. You can view its source [alt-shift-e]" accesskey="e">View source</a>
+					</li>
+					<li id="historyType" class="typeButton deselected">
+						<a href="https://en.wikipedia.org/w/index.php?title=Main_Page&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a>
+					</li>
+				</nav>
+				<div id="search">
+					<input placeholder="Search Wikipedia" title="Search Wikipedia [alt-shift-f]" accesskey="f" id="searchInput">
+					<input title="Go to a page with this exact name if it exists" id="searchButton">
+				</div>
+			</div>
+		</div>
+		<div id="panel">
+			<div id="logo">
+				<a title="Visit the main page" id="logo-link" href="https://en.wikipedia.org/wiki/Main_Page"></a>
+			</div>
+			<div id="p-menu-list">
+				<nav class="p-segment">
+					<ul class="p-nav-u">
+						<li id="n-mainpage" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a>
+						</li>
+						<li id="n-contents" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a>
+						</li>
+						<li id="n-currentevents" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Articles related to current events">Current events</a>
+						</li>
+						<li id="n-random" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Special:Random" title="Visit a randomly selected article [alt-shift-x]" accesskey="x">Random article</a>
+						</li>
+						<li id="n-about" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">About Wikipedia</a>
+						</li>
+						<li id="n-contact" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact us</a>
+						</li>
+						<li id="n-donate" class="p-nav-link">
+							<a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&utm_medium=sidebar&utm_campaign=C13_en.wikipedia.org&uselang=en" title="Support us by donating to the Wikimedia Foundation">Donate</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="p-segment">
+					<h3 id="p-contrib-title" class="p-title">
+						Contribute
+					</h3>
+					<ul class="p-nav-u">
+						<li id="n-help" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a>
+						</li>
+						<li id="n-edit" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Help:Introduction" title="Learn how to edit Wikipedia">Learn to edit</a>
+						</li>
+						<li id="n-portal" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="Guidance on how to use and edit Wikipedia">Community portal</a>
+						</li>
+						<li id="n-recentchanges" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [alt-shift-r]" accesskey="r">Recent changes</a>
+						</li>
+						<li id="n-upload" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia">Upload file</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="p-segment">
+					<h3 id="p-tools-title" class="p-title">
+						Tools
+					</h3>
+					<ul class="p-nav-u">
+						<li id="n-whatlinkshere" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Main_Page" title="List of all English Wikipedia pages containing links to this page [alt-shift-j]" accesskey="j">What links here</a>
+						</li>
+						<li id="n-recentchangeslinked" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Main_Page" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a>
+						</li>
+						<li id="n-specialpage" class="p-nav-link">
+							<a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a>
+						</li>
+						<li id="n-permalink" class="p-nav-link">
+							<a href="https://en.wikipedia.org/w/index.php?title=Main_Page&oldid=969106986" title="Permanent link to this revision of this page" accesskey="r">Permanent link</a>
+						</li>
+						<li id="n-info" class="p-nav-link">
+							<a href="https://en.wikipedia.org/w/index.php?title=Main_Page&action=info" title="More information about this page">Page information</a>
+						</li>
+						<li id="n-wikibase" class="p-nav-link">
+							<a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5296" title="Structured data on this page hosted by Wikidata" accesskey="g">Wikidata item</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="p-segment">
+					<h3 id="p-print-title" class="p-title">
+						Print/export
+					</h3>
+					<ul class="p-nav-u">
+						<li id="n-downloadpdf" class="p-nav-link">
+							<a href="https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=Main_Page&action=show-download-screen" title="Download this page as a PDF file">Download as PDF</a>
+						</li>
+						<li id="n-print" class="p-nav-link">
+							<a href="https://en.wikipedia.org/w/index.php?title=Main_Page&printable=yes" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="p-segment">
+					<h3 id="p-other-title" class="p-title">
+						In other projects
+					</h3>
+					<ul class="p-nav-u">
+						<li id="n-commons" class="p-nav-link">
+							<a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>
+						</li>
+						<li id="n-mediawiki" class="p-nav-link">
+							<a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a>
+						</li>
+						<li id="n-metawiki" class="p-nav-link">
+							<a href="https://meta.wikimedia.org/wiki/Main_Page">Meta-Wiki</a>
+						</li>
+						<li id="n-wikispecies" class="p-nav-link">
+							<a href="https://species.wikimedia.org/wiki/Main_Page">Wikispecies</a>
+						</li>
+						<li id="n-wikibooks" class="p-nav-link">
+							<a href="https://en.wikibooks.org/wiki/Main_Page">Wikibooks</a>
+						</li>
+						<li id="n-wikidata" class="p-nav-link">
+							<a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a>
+						</li>
+						<li id="n-wikimania" class="p-nav-link">
+							<a href="https://wikimania.wikimedia.org/wiki/Wikimania">Wikimania</a>
+						</li>
+						<li id="n-wikinews" class="p-nav-link">
+							<a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a>
+						</li>
+						<li id="n-wikiquote" class="p-nav-link">
+							<a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a>
+						</li>
+						<li id="n-wikisource" class="p-nav-link">
+							<a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a>
+						</li>
+						<li id="n-wikiversity" class="p-nav-link">
+							<a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a>
+						</li>
+						<li id="n-wikivoyage" class="p-nav-link">
+							<a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a>
+						</li>
+						<li id="n-wiktionary" class="p-nav-link">
+							<a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="p-segment">
+					<button id="lang-settings" title="Language settings"></button>
+					<h3 id="p-lang" class="p-title">
+						Languages
+					</h3>
+					<ul class="p-nav-u">
+						<li class="p-nav-link interwiki-ar">
+							<a href="https://ar.wikipedia.org/wiki/" title="Arabic" lang="ar" hreflang="ar">العربية</a>
+						</li>
+						<li class="p-nav-link interwiki-bg">
+							<a href="https://bg.wikipedia.org/wiki/" title="Bulgarian" lang="bg" hreflang="bg">Български</a>
+						</li>
+						<li class="p-nav-link interwiki-bs">
+							<a href="https://bs.wikipedia.org/wiki/" title="Bosnian" lang="bs" hreflang="bs">Bosanski</a>
+						</li>
+						<li class="p-nav-link interwiki-ca">
+							<a href="https://ca.wikipedia.org/wiki/" title="Catalan" lang="ca" hreflang="ca">Català</a>
+						</li>
+						<li class="p-nav-link interwiki-cs">
+							<a href="https://cs.wikipedia.org/wiki/" title="Czech" lang="cs" hreflang="cs">Čeština</a>
+						</li>
+						<li class="p-nav-link interwiki-da">
+							<a href="https://da.wikipedia.org/wiki/" title="Danish" lang="da" hreflang="da">Dansk</a>
+						</li>
+						<li class="p-nav-link interwiki-de">
+							<a href="https://de.wikipedia.org/wiki/" title="German" lang="de" hreflang="de">Deutsch</a>
+						</li>
+						<li class="p-nav-link interwiki-et">
+							<a href="https://et.wikipedia.org/wiki/" title="Estonian" lang="et" hreflang="et">Eesti</a>
+						</li>
+						<li class="p-nav-link interwiki-el">
+							<a href="https://el.wikipedia.org/wiki/" title="Greek" lang="el" hreflang="el">Ελληνικά</a>
+						</li>
+						<li class="p-nav-link interwiki-es">
+							<a href="https://es.wikipedia.org/wiki/" title="Spanish" lang="es" hreflang="es">Español</a>
+						</li>
+						<li class="p-nav-link interwiki-eo">
+							<a href="https://eo.wikipedia.org/wiki/" title="Esperanto" lang="eo" hreflang="eo">Esperanto</a>
+						</li>
+						<li class="p-nav-link interwiki-eu">
+							<a href="https://eu.wikipedia.org/wiki/" title="Basque" lang="eu" hreflang="eu">Euskara</a>
+						</li>
+						<li class="p-nav-link interwiki-fa">
+							<a href="https://fa.wikipedia.org/wiki/" title="Persian" lang="fa" hreflang="fa">فارسی</a>
+						</li>
+						<li class="p-nav-link interwiki-fr">
+							<a href="https://fr.wikipedia.org/wiki/" title="French" lang="fr" hreflang="fr">Français</a>
+						</li>
+						<li class="p-nav-link interwiki-gl">
+							<a href="https://gl.wikipedia.org/wiki/" title="Galician" lang="gl" hreflang="gl">Galego</a>
+						</li>
+						<li class="p-nav-link interwiki-ko">
+							<a href="https://ko.wikipedia.org/wiki/" title="Korean" lang="ko" hreflang="ko">한국어</a>
+						</li>
+						<li class="p-nav-link interwiki-hr">
+							<a href="https://hr.wikipedia.org/wiki/" title="Croatian" lang="hr" hreflang="hr">Hrvatski</a>
+						</li>
+						<li class="p-nav-link interwiki-id">
+							<a href="https://id.wikipedia.org/wiki/" title="Indonesian" lang="id" hreflang="id">Bahasa Indonesia</a>
+						</li>
+						<li class="p-nav-link interwiki-it">
+							<a href="https://it.wikipedia.org/wiki/" title="Italian" lang="it" hreflang="it">Italiano</a>
+						</li>
+						<li class="p-nav-link interwiki-he">
+							<a href="https://he.wikipedia.org/wiki/" title="Hebrew" lang="he" hreflang="he">עברית</a>
+						</li>
+						<li class="p-nav-link interwiki-ka">
+							<a href="https://ka.wikipedia.org/wiki/" title="Georgian" lang="ka" hreflang="ka">ქართული</a>
+						</li>
+						<li class="p-nav-link interwiki-lv">
+							<a href="https://lv.wikipedia.org/wiki/" title="Latvian" lang="lv" hreflang="lv">Latviešu</a>
+						</li>
+						<li class="p-nav-link interwiki-lt">
+							<a href="https://lt.wikipedia.org/wiki/" title="Lithuanian" lang="lt" hreflang="lt">Lietuvių</a>
+						</li>
+						<li class="p-nav-link interwiki-hu">
+							<a href="https://hu.wikipedia.org/wiki/" title="Hungarian" lang="hu" hreflang="hu">Magyar</a>
+						</li>
+						<li class="p-nav-link interwiki-mk">
+							<a href="https://mk.wikipedia.org/wiki/" title="Macedonian" lang="mk" hreflang="mk">Македонски</a>
+						</li>
+						<li class="p-nav-link interwiki-ms">
+							<a href="https://ms.wikipedia.org/wiki/" title="Malay" lang="ms" hreflang="ms">Bahasa Melayu</a>
+						</li>
+						<li class="p-nav-link interwiki-nl">
+							<a href="https://nl.wikipedia.org/wiki/" title="Dutch" lang="nl" hreflang="nl">Nederlands</a>
+						</li>
+						<li class="p-nav-link interwiki-ja">
+							<a href="https://ja.wikipedia.org/wiki/" title="Japanese" lang="ja" hreflang="ja">日本語</a>
+						</li>
+						<li class="p-nav-link interwiki-no">
+							<a href="https://no.wikipedia.org/wiki/" title="Norwegian Bokmål" lang="nb" hreflang="nb">Norsk bokmål</a>
+						</li>
+						<li class="p-nav-link interwiki-nn">
+							<a href="https://nn.wikipedia.org/wiki/" title="Norwegian Nynorsk" lang="nn" hreflang="nn">Norsk nynorsk</a>
+						</li>
+						<li class="p-nav-link interwiki-pl">
+							<a href="https://pl.wikipedia.org/wiki/" title="Polish" lang="pl" hreflang="pl">Polski</a>
+						</li>
+						<li class="p-nav-link interwiki-pt">
+							<a href="https://pt.wikipedia.org/wiki/" title="Portuguese" lang="pt" hreflang="pt">Português</a>
+						</li>
+						<li class="p-nav-link interwiki-ro">
+							<a href="https://ro.wikipedia.org/wiki/" title="Romanian" lang="ro" hreflang="ro">Română</a>
+						</li>
+						<li class="p-nav-link interwiki-ru">
+							<a href="https://ru.wikipedia.org/wiki/" title="Russian" lang="ru" hreflang="ru">Русский</a>
+						</li>
+						<li class="p-nav-link interwiki-simple">
+							<a href="https://simple.wikipedia.org/wiki/" title="Simple English" lang="en-simple" hreflang="en-simple">Simple English</a>
+						</li>
+						<li class="p-nav-link interwiki-sk">
+							<a href="https://sk.wikipedia.org/wiki/" title="Slovak" lang="sk" hreflang="sk">Slovenčina</a>
+						</li>
+						<li class="p-nav-link interwiki-sl">
+							<a href="https://sl.wikipedia.org/wiki/" title="Slovenian" lang="sl" hreflang="sl">Slovenščina</a>
+						</li>
+						<li class="p-nav-link interwiki-sr">
+							<a href="https://sr.wikipedia.org/wiki/" title="Serbian" lang="sr" hreflang="sr">Српски / srpski</a>
+						</li>
+						<li class="p-nav-link interwiki-sh">
+							<a href="https://sh.wikipedia.org/wiki/" title="Serbo-Croatian" lang="sh" hreflang="sh">Srpskohrvatski / српскохрватски</a>
+						</li>
+						<li class="p-nav-link interwiki-fi">
+							<a href="https://fi.wikipedia.org/wiki/" title="Finnish" lang="fi" hreflang="fi">Suomi</a>
+						</li>
+						<li class="p-nav-link interwiki-sv">
+							<a href="https://sv.wikipedia.org/wiki/" title="Swedish" lang="sv" hreflang="sv">Svenska</a>
+						</li>
+						<li class="p-nav-link interwiki-th">
+							<a href="https://th.wikipedia.org/wiki/" title="Thai" lang="th" hreflang="th">ไทย</a>
+						</li>
+						<li class="p-nav-link interwiki-tr">
+							<a href="https://tr.wikipedia.org/wiki/" title="Turkish" lang="tr" hreflang="tr">Türkçe</a>
+						</li>
+						<li class="p-nav-link interwiki-uk">
+							<a href="https://uk.wikipedia.org/wiki/" title="Ukrainian" lang="uk" hreflang="uk">Українська</a>
+						</li>
+						<li class="p-nav-link interwiki-vi">
+							<a href="https://vi.wikipedia.org/wiki/" title="Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a>
+						</li>
+						<li class="p-nav-link interwiki-zh">
+							<a href="https://zh.wikipedia.org/wiki/" title="Chinese" lang="zh" hreflang="zh">中文</a>
+						</li>
+						<li class="p-nav-link">
+							<a href="https://meta.wikimedia.org/wiki/List_of_Wikipedias" title="Complete list of Wikipedias"><b>Complete list</b></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div id="foreheadlol"></div>
+		<div id="main">
+			<div id="topbanner">
+				<div id="top-welcomesegment">
+					<div id="top-welcome">
+						Welcome to <a href="https://en.wikipedia.org/wiki/Wikipedia" title="Wikipedia">Wikipedia</a>,
+					</div>
+					<div id="top-welcome2">
+						the <a href="https://en.wikipedia.org/wiki/Free_content" title="Free content">free</a> <a href="https://en.wikipedia.org/wiki/Encyclopedia" title="Encyclopedia">encyclopedia</a> that <a href="https://en.wikipedia.org/wiki/Help:Introduction_to_Wikipedia" title="Help:Introduction to Wikipedia">anyone can edit</a>.
+					</div>
+					<div id="top-welcome3">
+						<a href="https://en.wikipedia.org/wiki/Special:Statistics" title="Special:Statistics">6,191,785</a> articles in <a href="https://en.wikipedia.org/wiki/English_language" title="English language">English</a>
+					</div>
+				</div>
+				<ul id="top-portals">
+					<li>
+						<a href="https://en.wikipedia.org/wiki/Portal:The_arts" title="Portal:The arts">The arts</a>
+					</li>
+					<li class="top-row2">
+						<a href="https://en.wikipedia.org/wiki/Portal:Biography" title="Portal:Biography">Biography</a>
+					</li>
+					<li class="top-row3">
+						<a href="https://en.wikipedia.org/wiki/Portal:Geography" title="Portal:Geography">Geography</a>
+					</li>
+					<li class="top-column2">
+						<a href="https://en.wikipedia.org/wiki/Portal:History" title="Portal:History">History</a>
+					</li>
+					<li class="top-column2 top-row2">
+						<a href="https://en.wikipedia.org/wiki/Portal:Mathematics" title="Portal:Mathematics">Mathematics</a>
+					</li>
+					<li class="top-column2 top-row3">
+						<a href="https://en.wikipedia.org/wiki/Portal:Science" title="Portal:Science">Science</a>
+					</li>
+					<li class="top-column3">
+						<a href="https://en.wikipedia.org/wiki/Portal:Society" title="Portal:Society">Society</a>
+					</li>
+					<li class="top-column3 top-row2">
+						<a href="https://en.wikipedia.org/wiki/Portal:Technology" title="Portal:Technology">Technology</a>
+					</li>
+					<li class="top-column3 top-row3">
+						<a href="https://en.wikipedia.org/wiki/Wikipedia:Contents/Portals" title="Wikipedia:Contents/Portals">All portals</a>
+					</li>
+				</ul>
+			</div>
+			<table id="mainbody">
+				<tbody>
+					<td id="mainbody-left">
+						<div class="main-table-content">
+							<h2 class="mainbody-title main-left-title-h2">
+							From today's featured article
+							</h2>
+							<div id="main-featured-img">
+								<a href="https://en.wikipedia.org/wiki/File:CW_Arty_Confederate_Napoleon.jpg" title="Napoleon Artillery Image I Found On Wikipedia">
+									<img alt="Napoleon Artillery Image I Found On Wikipedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/CW_Arty_Confederate_Napoleon.jpg/324px-CW_Arty_Confederate_Napoleon.jpg" height="122">
+								</a>
+								<div class="main-featured-img-capt">
+									Napoleon Artillery Cannon<br>
+									(unrelated)
+								</div>
+							</div>
+							<a href="https://en.wikipedia.org/wiki/Lemon"><b>yesterday i woke up sucking a lemon</b></a> yesterday i woke up sucking a lemon yesterday i woke up sucking a lemon yesterday i woke up sucking a lemon yesterday i woke up sucking a lemon yesterday i woke up sucking a lemon everything everything everything everything everything everything everything everything everything everything everything everything in its right place in its right place right place right place right place right place right place right place right place right place right place right place right place there are two colors in my head what is that tried to say what was that you tried to say tried to say tried to say tried to say tried to say tried to say tried to say tried to say tried to say everything everything everything everything in its right place in its right place in its right place in its right place in its right place  (<a href="https://en.wikipedia.org/wiki/Everything_in_Its_Right_Place">Full article...</a>)
+							<div class="section-footer right">
+								Recently featured: <a href="https://en.wikipedia.org/wiki/Hurricane_Lane_(2018)">Hurricane Lane (2018)</a> <b>·</b> <a href="https://www.youtube.com/watch?v=7hF41qPkJxs">Chef Steven Weber</a> <b>·</b> <a href="https://en.wikipedia.org/wiki/Tim_Heidecker">Tim Heidecker</a>
+								<br>
+								<b><a href="https://en.wikipedia.org/wiki/Wikipedia:Today%27s_featured_article/December_2020">Archive</a> · <a href="https://lists.wikimedia.org/mailman/listinfo/daily-article-l">By email</a> · <a href="https://en.wikipedia.org/wiki/Wikipedia:Featured_articles">More featured articles</a></b>
+							</div>
+							<h2 class="mainbody-title main-left-title-h2">
+								Did you know ...
+							</h2>
+							<div class="right-float-img">
+								<a href="https://commons.wikimedia.org/wiki/File:Cashew_apples.jpg" class="image" title="Cashew apples">
+									<img alt="Cashew apples" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cashew_apples.jpg/307px-Cashew_apples.jpg" height="125">
+								</a>
+							</div>
+							<ul>
+								<li>... that <a href="https://en.wikipedia.org/wiki/Cashew">cashews</a> (<i>pictured</i>) come from a <b><a href="https://en.wikipedia.org/wiki/Fruit">fruit</a>?</b></li>
+								<li>... that the <b><a href="https://en.wikipedia.org/wiki/Sky">sky</a></b> is <a href="https://en.wikipedia.org/wiki/Blue">blue?</a></li>
+								<li>... that things <b><a href="https://en.wikipedia.org/wiki/Free_fall">fall</a></b> when they are dropped due to gravity?</li>
+								<li>... that plants <a href="https://en.wikipedia.org/wiki/Photosynthesis">breathe in <b>carbon dioxide?</b></a></li>
+								<li>... that <b><a href="https://en.wikipedia.org/wiki/Hewlett-Packard">Hewlett-Packard</a></b> as a company is <b>going down the drain</b> and all their <a href="https://en.wikipedia.org/wiki/Consumer">consumer-level</a> devices have very poor <a href="https://en.wikipedia.org/wiki/Software">software support</a> compared to their <a href="https://en.wikipedia.org/wiki/Business">enterprise</a> devices despite some of their <a href="https://en.wikipedia.org/wiki/Consumer">consumer products</a> having a similar pricing to <a href="https://en.wikipedia.org/wiki/Business">enterprise</a> products <b>costing upwards of $1,000 USD</b> (screw you HP I don't want <b><a href="https://en.wikipedia.org/wiki/McAfee">McAfee SecureSafe Pro Antivirus 2025</a></b> and <b>Cool HP Games 2-hour Trial</b> on my laptop go away you're not helping anyone with that stuff except old technologically illiterate people who don't understand that those are why their computer is so slow and aren't good things that you included out of the goodness of your heart)?
+								<li>... that this is a <b><a href="https://en.wikipedia.org/wiki/Text">line of text?</a></b></li>
+								<li>... that <b><a href="https://en.wikipedia.org/wiki/Confusion">I don't know</a></b> what I am doing?</li>
+								<li>... that <b>you are <a href="https://en.wikipedia.org/wiki/Reading">reading</a></b> this text for some reason?</li>
+								<li>... that apparently <a href="https://en.wikipedia.org/wiki/Leonardo_DiCaprio">Leonardo DiCaprio</a> actually <b>set people on <a href="https://en.wikipedia.org/wiki/Arson">fire</a></b> while filming <a href="https://en.wikipedia.org/wiki/Once_Upon_a_Time_in_Hollywood">Once Upon A Time In Hollywood</a><b> which I haven't seen yet?</b></li>
+							</ul>
+							<div class="section-footer right">
+								<b><a href="https://en.wikipedia.org/wiki/Wikipedia:Recent_additions">Archive</a> · <a href="https://en.wikipedia.org/wiki/Help:Your_first_article">Start a new article</a> · <a href="https://en.wikipedia.org/wiki/Template_talk:Did_you_know">Nominate an article</a></b>
+							</div>
+						</div>
+					</td>
+					<td id="mainbody-border">
+					</td>
+					<td id="mainbody-right">
+						<div class="main-table-content">
+							<h2 class="mainbody-title main-right-title-h2">
+								In the news
+							</h2>
+							<div id="covid-news">
+								<dl>
+									<dt>
+										<a href="https://en.wikipedia.org/wiki/COVID-19_pandemic" title="COVID-19 pandemic">COVID-19 pandemic</a>:
+									</dt>
+									<dd>
+										<a href="https://en.wikipedia.org/wiki/Coronavirus_disease_2019" title="Coronavirus disease 2019">Disease</a><b> · </b>
+									</dd>
+									<dd>
+										<a href="https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2" title="Severe acute respiratory syndrome coronavirus 2">Virus</a><b> · </b>
+									</dd>
+									<dd>
+										<a href="https://en.wikipedia.org/wiki/COVID-19_pandemic_by_country_and_territory" title="COVID-19 pandemic by country and territory"><span class="nowrap">By location</span></a><b> · </b>
+									</dd>
+									<dd>
+										<a href="https://en.wikipedia.org/wiki/Impact_of_the_COVID-19_pandemic" title="Impact of the COVID-19 pandemic">Impact</a><b> · </b>
+									</dd>
+									<dd>
+										<a href="https://en.wikipedia.org/wiki/Portal:Coronavirus_disease_2019" title="Portal:Coronavirus disease 2019">Portal</a>
+									</dd>
+								</dl>
+							</div>
+							<div class="right-float-img">
+								<a href="https://en.wikipedia.org/wiki/File:R.KURIHARA.jpg" class="image" title="Ryoya Kurihara in 2019">
+									<img alt="Ryoya Kurihara in 2019" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/R.KURIHARA.jpg/228px-R.KURIHARA.jpg" height="171">
+								</a>
+								<div class="main-featured-img-capt">
+									Ryoya Kurihara 
+									<br>(unrelated)
+								</div>
+							</div>
+							<ul>
+								<li>Japanese mangaka <a href="https://en.wikipedia.org/wiki/Mangaka"><b>Yoji Kuranaraharanada</b></a> (<i>not pictured</i>) has died at the age of 231 due to a <a href="https://en.wikipedia.org/wiki/Heart_attack">heart attack</a></li>
+								<li>African American rapper <b><a href="https://en.wikipedia.org/wiki/Kanye_West">Kanye West</a></b> has been elected as the <a href="https://en.wikipedia.org/wiki/President_of_the_United_States">98th president of the United States of America</a></li>
+								<li>Artist <b><a href="https://en.wikipedia.org/wiki/Thom_Yorke">Thom Yorke</a></b> from the band <a href="https://en.wikipedia.org/wiki/Radiohead">Thom Yorke And The Radio Heads</a> has been arrested by the <a href="https://en.wikipedia.org/wiki/British_Government">British government</a> after posting "the government is bad" on social media service <a href="https://en.wikipedia.org/wiki/Twitter">Twitter</a></li>
+							</ul>
+							<div class="section-footer">
+								<b><a href="https://en.wikipedia.org/wiki/Portal:Current_events">Ongoing</a></b>: <a href="https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict">Nagorno-Karabakh conflict</a>
+								<br>
+								<b><a href="https://en.wikipedia.org/wiki/Deaths_in_2020">Recent deaths</a></b>: <a href="https://en.wikipedia.org/wiki/Sid_Hartman">Sid Hartman</a> <b>·</b> <a href="https://en.wikipedia.org/wiki/James_A._Johnson_(businessman)">James A. Johnson</a> <b>·</b> <a href="https://en.wikipedia.org/wiki/Johnny_Bush">Johnny Bush</a> <b>·</b> <a href="https://en.wikipedia.org/wiki/Tom_Maschler">Tom Maschler</a> <b>·</b> <a href="https://en.wikipedia.org/wiki/Ed_Benguiat">Ed Benguiat</a> <b>·</b> <a href="https://en.wikipedia.org/wiki/Bhanu_Athaiya">Bhanu Athaiya</a>
+							</div>
+							<div class="section-footer right">
+								<a href="https://en.wikipedia.org/wiki/Wikipedia:In_the_news/Candidates"><b>Nominate an article</b></a>
+							</div>
+							<h2 class="mainbody-title main-right-title-h2">
+								On this day
+							</h2>
+							<b><a href="https://en.wikipedia.org/wiki/November_10">November 10</a></b>: <b><a href="https://en.wikipedia.org/wiki/Noor_Hossain">Noor Hossain Day</a></b> in Bangladesh (1987)
+							<div class="right-float-img" style="max-width: 174px">
+								<a href="https://commons.wikimedia.org/wiki/File:Iosif_Berman_-_Marele_cutremur_din_anul_1940.jpg" class="image" title="Rescue efforts after the Vrancea earthquake">
+									<img alt="Rescue efforts after the Vrancea earthquake" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Iosif_Berman_-_Marele_cutremur_din_anul_1940.jpg/348px-Iosif_Berman_-_Marele_cutremur_din_anul_1940.jpg" height="113">
+								</a>
+								<div class="main-featured-img-capt">
+									Rescue efforts after the Vrancea earthquake
+								</div>
+							</div>
+							<ul>
+								<li><a href="https://en.wikipedia.org/wiki/1202">1202</a> – <a href="https://en.wikipedia.org/wiki/Fourth_Crusade">Fourth Crusade</a>: The <b><a href="https://en.wikipedia.org/wiki/Siege_of_Zara">Siege of Zara</a></b> (present-day <a href="https://en.wikipedia.org/wiki/Zadar">Zadar</a>, Croatia), the first attack on a Catholic city by Catholic <a href="https://en.wikipedia.org/wiki/Crusades">crusaders</a>, began.</li>
+								<li><a href="https://en.wikipedia.org/wiki/1940">1940</a> – <b><a href="https://en.wikipedia.org/wiki/1940_Vrancea_earthquake">An earthquake</a></b> registering 7.7 <a href="https://en.wikipedia.org/wiki/Moment_magnitude_scale">Mw</a> struck the <a href="https://en.wikipedia.org/wiki/Vrancea_County">Vrancea</a> region of Romania (rescue efforts pictured).</li>
+								<li><a href="https://en.wikipedia.org/wiki/1945">1945</a> – <a href="https://en.wikipedia.org/wiki/Indonesian_National_Revolution">Indonesian National Revolution</a>: Following the killing of Brigadier <a href="https://en.wikipedia.org/wiki/Aubertin_Walter_Sothern_Mallaby">A. W. S. Mallaby</a> a few weeks earlier, British forces retaliated by <b><a href="https://en.wikipedia.org/wiki/Battle_of_Surabaya">attacking</a></b> <a href="https://en.wikipedia.org/wiki/Surabaya">Surabaya</a>.</li>
+								<li><a href="https://en.wikipedia.org/wiki/2007">2007</a> – At the <a href="https://en.wikipedia.org/wiki/Ibero-American_Summit">Ibero-American Summit</a> in <a href="https://en.wikipedia.org/wiki/Santiago">Santiago</a>, Chile, <a href="https://en.wikipedia.org/wiki/Juan_Carlos_I">King Juan Carlos I of Spain</a> asked Venezuelan president <a href="https://en.wikipedia.org/wiki/Hugo_Ch%C3%A1vez">Hugo Chávez <b>"<a href="https://en.wikipedia.org/wiki/%C2%BFPor_qu%C3%A9_no_te_callas%3F">Why don't you shut up?</a>"</b> after Chávez repeatedly interrupted a speech by Spanish prime minister <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Luis_Rodr%C3%ADguez_Zapatero">José Luis Rodríguez Zapatero</a>.</li>
+							</ul>
+							<div class="section-footer">
+								<a href="https://en.wikipedia.org/wiki/Gu%C3%B0r%C3%B8%C3%B0r_%C3%93l%C3%A1fsson"><b>Guðrøðr Óláfsson</b></a> (d. 1187) <b>·</b> <a href="https://en.wikipedia.org/wiki/Louis_Lingg"><b>Louis Lingg</b></a> (d. 1887) <b>·</b> <a href="https://en.wikipedia.org/wiki/Neil_Gaiman"><b>Neil Gaiman</b></a> (b. 1960)
+							</div>
+							<div class="section-footer">
+								More anniversaries: <a href="https://en.wikipedia.org/wiki/November_9">November 9</a> <b>·</b> <a href="https://en.wikipedia.org/wiki/November_10"><b>November 10</b></a> <b>·</b> <a href="https://en.wikipedia.org/wiki/November_11">November 11</a>
+							</div>
+							<div class="section-footer right">
+								<b><a href="https://en.wikipedia.org/wiki/Wikipedia:Selected_anniversaries/November">Archive</a> · <a href="https://lists.wikimedia.org/mailman/listinfo/daily-article-l">By email</a> · <a href="https://en.wikipedia.org/wiki/List_of_days_of_the_year">List of days of the year</a></b>
+							</div>
+						</div>
+					</td>
+				</tbody>
+			</table>
+		</div>
+		<footer>
+			<p id="footer-copyright">
+				Text is available under the <a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a href="https://creativecommons.org/licenses/by-sa/3.0/"></a>; additional terms may apply.  By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization. Layout recreated by Timothy Wei with Sublime Text, Chrome DevTools, and lots of "putting off for later."
+			</p>
+			<ul id="footer-links">
+				<li id="f-priv" class="menuButton">
+					<a href="https://foundation.wikimedia.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a>
+				</li>
+				<li id="f-about" class="menuButton">
+					<a href="https://en.wikipedia.org//wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a>
+				</li>
+				<li id="f-discl" class="menuButton">
+					<a href="https://en.wikipedia.org//wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a>
+				</li>
+				<li id="f-cont" class="menuButton">
+					<a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a>
+				</li>
+				<li id="f-mobile" class="menuButton">
+					<a href="https://en.m.wikipedia.org/w/index.php?title=Main_Page&amp;mobileaction=toggle_view_mobile">Mobile view</a>
+				</li>
+				<li id="f-dev" class="menuButton">
+					<a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a>
+				</li>
+				<li id="f-stats" class="menuButton">
+					<a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a>
+				</li>
+				<li id="f-cookie" class="menuButton">
+					<a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a>
+				</li>
+				<li class="menuButton">
+					<a href="biblio/wei_recreate_biblio.html">Recreation bibliography</a>
+				</li>
+				<li class="menuButton">
+					<a href="font_colours/wei_recreate_fonts_colors.html">Recreation fonts and colors</a>
+				</li>
+			</ul>
+			<ul id="footer-icons">
+				<li id="copyrightico">
+					<a href="https://wikimediafoundation.org/">
+						<img src="https://en.wikipedia.org/static/images/footer/wikimedia-button-2x.png" height="31" alt="A Wikimedia Project">
+					</a>
+				</li>
+				<li id="poweredbyico">
+					<a href="https://www.mediawiki.org/">
+						<img src="https://en.wikipedia.org/static/images/footer/poweredby_mediawiki_176x62.png" height="31" alt="Powered by MediaWiki">
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

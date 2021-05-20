@@ -1,0 +1,54 @@
+img {
+	height:120px;
+}
+
+body {
+  background-color: #111111;
+  margin: 0;
+}
+
+h1, h2, h3, h4, p, ul, a {
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.topBarThingIDK {
+  background-color: #111111;
+}
+
+
+.section1 {
+  background-color: #070707;
+}
+
+#content {
+  max-width: 50em;
+  margin: auto;
+  background-color: black;
+  padding: 1em;
+}
+
+@media print {
+  body {
+    background-color: white;
+    font-size: 0.75em;
+  }
+  
+  h1, h2, h3, h4, p, ul, a {
+    color: black;
+  }
+  
+  .topBarThingIDK {
+    background-color: white;
+  }
+  
+  
+  .section1 {
+    background-color: white;
+  }
+
+  #content {
+    max-width: unset;
+    background-color: white
+  }
+}

@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background-color: white;
+}
+
+.bolder{
+    font-weight: 700;
+}
+
+#navbar {
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5em 1em;
+    width: 100%;
+    -webkit-backdrop-filter: saturate(175%) blur(20px); /* Safari blur fix because Apple requires the -webkit- prefix for some reason */
+    backdrop-filter: saturate(160%) blur(20px); /* magic blurred background thing */
+    font-size: 0.8em;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#contact {
+    float: right;
+    padding: 0 2em;
+}
+
+#contact > a {
+    text-decoration: none !important;
+    padding-left: 1em;
+}
+
+#contact > a > img {
+    height: 2.5em;
+    max-width: 100%;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.textbox{
+    max-width: 25em;
+    font-size: 1.8em;
+    margin: 0 auto;
+    padding: 2em;
+    padding-top: 0;
+    opacity: 0;
+    animation: fade 1s ease-out 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.adaptive{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 50em;
+}
+
+@media (max-width: 60em) {
+    .textbox{
+        font-size: 1.75em !important;
+    }
+}
+
+
+#boardpic{
+    flex: 5%;
+    min-height: 10em;
+    flex-grow: 1;
+    opacity: 0;
+    animation: fade 1s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+#boardpic > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.adaptivetext{
+    flex: 2%;
+    padding-right: 2em;
+    margin: 0 !important;
+    max-width: none !important;
+    background-color: white;
+    font-size: 1.8em;
+}
+
+li{
+    padding-bottom: 0.2em;
+}
+
+#navbar > a {
+    color: white;
+    font-size: 2em;
+    padding: 0 1em 0 0;
+    text-decoration: none;
+}
+
+#navbar > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.selected{
+    text-decoration: underline !important;
+}
+
+#nameboxthing{
+    width: 100%;
+    height: 30vh;
+    min-height: 20em;
+    display: block;
+    position: relative;
+    animation: fade 1s ease-out;
+    overflow: hidden;
+}
+
+.profilebanner{
+    background-image: url("../image/wei_portfolio_banner.jpg");
+    background-color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 1em 1em 0.5em 1em;
+    text-align: center;
+}
+
+footer > a{
+    color: white;
+}
+
+.textboxobj{
+    max-width: 25em !important;
+    margin: 0 auto !important;
+}
+
+#sitelist {
+    margin: 0 auto;
+}
+
+.imgcolumn {
+    width: 160px;
+}
+
+.imgcolumn > img {
+    width: 160px;
+    height: 90px;
+}
+
+.textcolumn {
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    padding: 0 1em;
+}
+
+.text-end {
+    border-bottom: unset;
+}
+
+.textcolumn * {
+    margin: 0;
+}
+
+th {
+    width: 1.5em;
+    font-size: 2em;
+}
+
+a {
+    color: black;
+}
+
+
+@media (max-width: 40em) {
+    .adaptive {
+      flex-direction: column;
+      max-height: none !important;
+    }
+    #nameboxthing{
+        height: 20vh !important;
+    }
+    .textbox{
+        font-size: 1.4em !important;
+        padding: 1em 1em 1em 1em !important;
+    }
+    .imgcolumn {
+        width: 80px;
+    }
+    .imgcolumn > img {
+        width: 80px;
+        height: 45px;
+    }
+    
+}
+
+#nameboxthing > h1{
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    margin: 0em;
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+    font-size: 3em;
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+    text-align: center;
+}
+
+#initials {
+    position: absolute;
+    font-family: monospace;
+    font-size: 10em;
+    margin: auto;
+    margin-top: 0.2em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(0,0,0,0.75);
+    padding: 0 0.1em;
+    z-index: 2;
+    color: white;
+    border: 0.01em solid rgba(255,255,255,0.25);
+    border-radius: 0.02em;
+    -webkit-backdrop-filter: saturate(100%) blur(10px);
+    backdrop-filter: saturate(100%) blur(10px);
+}

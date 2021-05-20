@@ -1,0 +1,21 @@
+img {
+	height:120px;
+}
+
+body {
+  background-color: black;
+}
+
+h1, h2, h3, h4, p, ul, a {
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.topBarThingIDK {
+  background-color: #111111;
+}
+
+
+.section1 {
+  background-color: #070707;
+}
