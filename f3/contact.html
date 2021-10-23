@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="icon" href="Images/logo.png">
+        <script defer src="script.js"></script>
+        <title>Contact</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <ul class="main-nav">
+                <li>
+                    <a href="index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="about-us.html" class="nav-links">About Us</a>
+                </li>
+                <li>
+                    <a href="our-videos.html" class="nav-links">Our Videos</a>
+                </li>
+                <li>
+                    <a href="clients.html" class="nav-links">Clients</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-links">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="material-icons" style="font-size: 20px;">menu</i>
+            </div>
+        </nav>
+
+        <div class="bimage-ct" style="background-image: url(Images/contact.jpg);">
+            <div class="form-ct">
+                <div id="email-us">Our Email: <a href="mailto:filmmakersforfoundations@gmail.com">filmmakersforfoundations@gmail.com</a></div>
+            </div>
+        </div>
+
+        <footer class="footer" style="margin: 0;">
+            <div class="footer-left">
+              <div class="a">ABOUT US</div>
+              <div class="b">
+                From a teaser video for the homepage of your website to an informational video that could promote a movement or event, to a documentary or film, if any of these ideas pique your interest or if you have any proposals of your own, feel free to reach out!
+              </div>
+            </div>
+            <div class="footer-center">
+              <div>
+                <i class="material-icons">room</i>
+                <div class="c">Fremont, CA</div>
+              </div>
+              <div>
+                <i class="material-icons">email</i>
+                <div class="c">filmmakersforfoundations@gmail.com</div>
+              </div>
+              <div>
+                <a href="https://www.youtube.com/channel/UCiiRG5Rxg7TvjyIIoIFnsOQ" id="YT" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                <div class="c">Filmmakers For Foundations</div>
+              </div>
+            </div>
+            <div class="footer-right">
+              <img src="Images/logo.png" height="75">
+              <p class="menu">
+                <a href="index.html"> Home</a> |
+                <a href="about-us.html"> About Us</a> |
+                <a href="our-videos.html"> Our Videos</a> |
+                <a href="contact.html"> Contact</a> |
+                <a href="clients.html"> Clients</a> 
+              </p>
+              <div class="cp"> Filmmakers For Foundations &copy; 2021</div>
+            </div>
+          </footer>
+
+    </body>
+
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+
+<script>
+$('#Form').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#Form').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  
+        error: function () {
+            alert('Form Submitted. Thanks.')
+        }
+    })
+    $("#Form")[0].reset();
+})
+</script>
