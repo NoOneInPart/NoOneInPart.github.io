@@ -136,7 +136,8 @@ a.nl:hover {
   background: rgba(255,255,255,.75);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  border: 1px solid rgba(0,0,0,0.1)
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 .bimage-ww {
@@ -155,7 +156,8 @@ a.nl:hover {
   background: rgba(255,255,255,.75);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  border: 1px solid rgba(0,0,0,0.1)
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 .YT {
@@ -177,6 +179,9 @@ a.nl:hover {
     background-size: cover;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bimage-ab h1 {
@@ -187,19 +192,14 @@ a.nl:hover {
   font-size: 1.875em;
   padding: 0px 12px;
   letter-spacing: 0.25em;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
   max-width: 310px;
   line-height: 60px;
-  height: 60px;
   color: #000;
   background: rgba(255,255,255,.75);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  border: 1px solid rgba(0,0,0,0.1)
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 .bimage-ct {
@@ -222,19 +222,14 @@ a.nl:hover {
   font-size: 1.875em;
   padding: 0px 12px;
   letter-spacing: 0.25em;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
   max-width: 310px;
   line-height: 60px;
-  height: 60px;
   color: #000;
   background: rgba(255,255,255,.75);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  border: 1px solid rgba(0,0,0,0.1)
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 .info-containter {
@@ -329,6 +324,9 @@ a.nl:hover {
 .ab-container {
   color: #000;
   box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.1);
 }
   
 .ab-container img{
@@ -342,7 +340,7 @@ a.nl:hover {
   height: 2em; 
   background-color: transparent; 
   z-index: 1; 
-  bottom: 25px; 
+  bottom: 3em; 
   border-width: 0 0.25em 0.25em 0;
   border-style: solid; 
   border-color: #fff; 
@@ -358,7 +356,7 @@ a.nl:hover {
   height: 2em; 
   background-color: transparent; 
   z-index: 1; 
-  bottom: 40px;  
+  bottom: 4em;  
   border-width: 0 0.25em 0.25em 0; 
   border-style: solid; 
   border-color: #fff; 
@@ -374,7 +372,8 @@ a.nl:hover {
   min-width: 400px;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  border: 1px solid rgba(0,0,0,0.1)
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 .form-ct .c {
@@ -452,6 +451,7 @@ textarea {
   text-align: left;
   padding: 10px;
   margin-top: 1em;
+  border-top: 1px solid rgba(0,0,0,.1);
 }
 
 .footer .footer-left, .footer .footer-center, .footer .footer-right {
@@ -751,6 +751,8 @@ textarea {
   font-size: 1.25em;
   box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
   text-align: center;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 10px;
 }
 
 .cl-container a {
@@ -1018,7 +1020,8 @@ textarea {
     background-color: rgb(30,30,30);
   }
   .footer{
-    background-color: rgb(30,30,30);;
+    background-color: rgb(30,30,30);
+    border-top: 1px solid rgba(255,255,255,.1);
   }
   .form-ct, .fullsize-video-bg h1, .bimage-ab h1, .bimage-ct h1, .bimage-ww h1{
     color: white;
@@ -1032,5 +1035,8 @@ textarea {
   }
   .material-icons, .fa {
     color: white;
+  }
+  .cl-container article, .ab-container {
+    border: 1px solid rgba(255,255,255,.1);
   }
 }
